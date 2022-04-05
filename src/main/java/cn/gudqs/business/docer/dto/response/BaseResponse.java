@@ -2,7 +2,10 @@ package cn.gudqs.business.docer.dto.response;
 
 import lombok.Data;
 
+import java.util.Map;
+
 /**
+ * 统一返回类
  * @author wq
  */
 @Data
@@ -25,6 +28,8 @@ public class BaseResponse<T> {
      * 是否成功
      * true: 代表成功, 此时 code = 0
      * false: 代表失败, 此时 code != 0
+     * #example true
+     * #mock-val @pick([true, false])
      */
     private Boolean success;
 
@@ -37,6 +42,8 @@ public class BaseResponse<T> {
      * 分页-总条数
      */
     private Long totalCount;
+
+    private Map<String, Object> otherMap;
 
     public static <T> BaseResponse<T> success() {
         return success(null);

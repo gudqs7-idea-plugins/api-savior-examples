@@ -115,3 +115,7 @@ fabric.properties
 
 
 .idea
+
+api-doc
+
+*docer-config.properties

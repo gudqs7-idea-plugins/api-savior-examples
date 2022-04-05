@@ -2,7 +2,7 @@ package cn.gudqs.business.docer.controller;
 
 import cn.gudqs.business.docer.dto.request.ListUserRequest;
 import cn.gudqs.business.docer.dto.response.BaseResponse;
-import cn.gudqs.business.docer.dto.response.ListUserResponse;
+import cn.gudqs.business.docer.dto.response.UserResponse;
 import cn.gudqs.business.docer.entity.UserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * 用户接口
+ * #module 用户模块1
  *
  * @author wq
  */
@@ -25,12 +26,13 @@ public class UserController {
 
     /**
      * 查询用户信息(分页)
+     * #ActionName DescribeUsers
      *
      * @param listUserPage 过滤条件
      * @return 用户列表数据-分页
      */
     @PostMapping("/listUser")
-    public BaseResponse<List<ListUserResponse>> listUserPage(ListUserRequest listUserPage) {
+    public BaseResponse<List<UserResponse>> listUserPage(ListUserRequest listUserPage) {
         // todo 查询分页数据
         log.info("listUserPage--> " + listUserPage);
 

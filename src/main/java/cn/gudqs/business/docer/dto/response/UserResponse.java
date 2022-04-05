@@ -10,7 +10,7 @@ import java.util.Date;
  * @author wq
  */
 @Data
-public class ListUserResponse {
+public class UserResponse {
 
     /**
      * 用户昵称
@@ -53,5 +53,10 @@ public class ListUserResponse {
      * 最近一次登录时间
      */
     private Date lastLoginTime;
+
+    /**
+     * 用户信息22
+     */
+    private UserResponseExt userResponseExt;
 
 }

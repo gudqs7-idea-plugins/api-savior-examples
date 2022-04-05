@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 查询用户-过滤条件
@@ -48,5 +50,15 @@ public class ListUserRequest extends BasePageRequest {
      * 过滤登录时间范围-结束
      */
     private Date loginTimeEnd;
+
+    /**
+     * 其他信息
+     */
+    private Map<String, Object> otherMap;
+
+    /**
+     * id集合
+     */
+    private List<Long> idList;
 
 }
