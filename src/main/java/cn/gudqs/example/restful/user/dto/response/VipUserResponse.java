@@ -2,18 +2,38 @@ package cn.gudqs.example.restful.user.dto.response;
 
 import lombok.Data;
 
+import java.util.Date;
+
 /**
- * 用户信息
- *
- * @author gudqs7
+ * @author wenquan
+ * @date 2022/5/9
  */
 @Data
-public class UserResponse {
+public class VipUserResponse {
 
     /**
      * 用户ID-主键
      */
     private Long userId;
+
+    /**
+     * VIP 类型
+     * 1:青铜
+     * 2:白银
+     * 3:黄金
+     * #example 3
+     */
+    private Integer vipType;
+
+    /**
+     * VIP 过期时间
+     */
+    private Date vipExpireTime;
+
+    /**
+     * VIP 首次开通时间
+     */
+    private Date vipFirstOpenTime;
 
     /**
      * 用户昵称
