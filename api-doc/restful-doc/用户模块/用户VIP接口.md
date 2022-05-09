@@ -22,7 +22,7 @@ application/x-www-form-urlencoded
 ```json
 pageNumber:1
 pageSize:20
-//searchKeyword:模糊搜索词93
+//searchKeyword:模糊搜索词116
 //gender:2
 //vipType:3
 //firstOpenTimeStart:2022-05-09
@@ -53,15 +53,15 @@ pageSize:20
 {
   "success": true,
   "code": 200,
-  "message": "错误信息45",
+  "message": "错误信息119",
   "data": [
     {
-      "userId": 897,
+      "userId": 313,
       "vipType": 3,
-      "vipExpireTime": "2022-05-09T10:46:49.008+0000",
-      "vipFirstOpenTime": "2022-05-10T03:36:12.737+0000",
-      "userNickName": "用户昵称14",
-      "userRealName": "用户姓名84",
+      "vipExpireTime": "2022-05-09T09:48:51.631+0000",
+      "vipFirstOpenTime": "2022-05-09T15:17:05.257+0000",
+      "userNickName": "用户昵称78",
+      "userRealName": "用户姓名89",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -69,12 +69,12 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     },
     {
-      "userId": 897,
+      "userId": 313,
       "vipType": 3,
-      "vipExpireTime": "2022-05-09T10:46:49.008+0000",
-      "vipFirstOpenTime": "2022-05-10T03:36:12.737+0000",
-      "userNickName": "用户昵称14",
-      "userRealName": "用户姓名84",
+      "vipExpireTime": "2022-05-09T09:48:51.631+0000",
+      "vipFirstOpenTime": "2022-05-09T15:17:05.257+0000",
+      "userNickName": "用户昵称78",
+      "userRealName": "用户姓名89",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -82,7 +82,7 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     }
   ],
-  "totalCount": 372
+  "totalCount": 616
 }
 ```
 
@@ -91,8 +91,8 @@ pageSize:20
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  是否成功<br>true: 代表成功<br>false: 代表失败 |   |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>500: 代表未知异常 |   |
+| success     | **Boolean**    |  请求是否成功 |   |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 |   |
 | message     | **String**    |  错误信息 |   |
 | data     | **List\<VipUserResponse\>**    |  返回数据 |   |
 |└─ userId     | **Long**    |  用户ID-主键 |   |
@@ -154,7 +154,7 @@ openingTime:1
 {
   "success": true,
   "code": 200,
-  "message": "错误信息125",
+  "message": "错误信息51",
   "data": true
 }
 ```
@@ -164,8 +164,8 @@ openingTime:1
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  是否成功<br>true: 代表成功<br>false: 代表失败 |   |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>500: 代表未知异常 |   |
+| success     | **Boolean**    |  请求是否成功 |   |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 |   |
 | message     | **String**    |  错误信息 |   |
 | data     | **Boolean**    |  返回数据 |   |
 
@@ -222,7 +222,7 @@ openingTime:1
 {
   "success": true,
   "code": 200,
-  "message": "错误信息125",
+  "message": "错误信息6",
   "data": false
 }
 ```
@@ -232,8 +232,8 @@ openingTime:1
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  是否成功<br>true: 代表成功<br>false: 代表失败 |   |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>500: 代表未知异常 |   |
+| success     | **Boolean**    |  请求是否成功 |   |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 |   |
 | message     | **String**    |  错误信息 |   |
 | data     | **Boolean**    |  返回数据 |   |
 

@@ -11,9 +11,7 @@ import lombok.Data;
 public class BaseResponse<T> {
 
     /**
-     * 是否成功
-     * true: 代表成功
-     * false: 代表失败
+     * 请求是否成功
      * #example true
      */
     private Boolean success;
@@ -21,7 +19,7 @@ public class BaseResponse<T> {
     /**
      * 状态码
      * 200: 代表成功
-     * 500: 代表未知异常
+     * 其它代表异常
      * #example 200
      */
     private Integer code;

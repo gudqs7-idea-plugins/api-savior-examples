@@ -1,0 +1,673 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>用户模块-用户VIP接口</title>
+    <style type="text/css">
+
+        :root {
+            --monospace: "Lucida Console", Consolas, "Courier", monospace;
+        }
+
+        #markdown {
+            font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header
+        -------------------- */
+
+        #markdown h1, #markdown h2, #markdown h3 {
+            cursor: default;
+        }
+
+        #markdown h1 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        #markdown h2 {
+            margin: 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #markdown h3 {
+            position: relative;
+            margin: 10px 0;
+        }
+
+
+        #markdown h4 {
+            margin: 10px 0;
+        }
+
+        /* Text Formating
+        -------------------- */
+
+        #markdown p {
+            margin: 12px 0;
+        }
+
+        #markdown code {
+            margin: 0 2px;
+            padding: 3px 5px;
+            border-radius: 2px;
+            color: rgb(236, 90, 22);
+            background-color: #eee;
+            font-family: var(--monospace);
+        }
+
+        /* Horizontal Rule
+        -------------------- */
+
+        #markdown hr {
+            height: 2px;
+            margin: 16px 0;
+            border: none;
+            background-color: #ccc;
+        }
+
+        /* Cites
+        -------------------- */
+
+        #markdown blockquote {
+            border-left: 4px solid #0eaeec;
+            padding: 10px 15px;
+            color: #666;
+            background-color: #dbf3fd;
+        }
+
+        /* Table
+        -------------------- */
+
+        #markdown table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        #markdown table th, #markdown table td {
+            padding: 6px 12px;
+            border: 1px solid #dfe2e5;
+        }
+
+        #markdown table tr {
+            background-color: #fff;
+        }
+
+        #markdown table thead tr, #markdown table tbody tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        /* Code Block
+        -------------------- */
+
+        #markdown pre code {
+            display: block;
+            padding: 16px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            color: #525252;
+            font-size: 14px;
+            line-height: 22px;
+            white-space: pre;
+            overflow-x: auto;
+            font-family: var(--monospace);
+        }
+
+        /* List
+        -------------------- */
+
+        #markdown ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        #markdown ul li {
+            margin: 8px 0;
+        }
+
+        #markdown ul ul {
+            list-style-type: circle;
+        }
+
+        #markdown ul ul ul {
+            list-style-type: square;
+        }
+
+        /* Link
+        -------------------- */
+
+        #markdown a {
+            color: #0eaeec;
+            font-weight: bold;
+        }
+
+        /* Image
+        -------------------- */
+
+        #markdown img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 16px auto;
+        }
+    </style>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/solarized-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+<article id='markdown'>
+  <h1 id='查询VIP用户信息列表(分页)'>查询VIP用户信息列表(分页)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/queryVipUsers</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">pageNumber:1
+pageSize:20
+//searchKeyword:模糊搜索词14
+//gender:2
+//vipType:3
+//firstOpenTimeStart:2022-05-09
+//firstOpenTimeEnd:2022-05-09
+//vipExpireTimeStart:2022-05-09
+//vipExpireTimeEnd:2022-05-09
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >pageNumber<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >分页-当前页码</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >pageSize<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >分页-分页大小</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >searchKeyword<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >模糊搜索词<br>支持用户昵称, 用户姓名, 用户手机号</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >gender<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >否<br/></td>
+<td >用户性别<br>0: 保密<br>1: 男<br>2: 女</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >vipType<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >否<br/></td>
+<td >VIP 类型<br>1:青铜<br>2:白银<br>3:黄金</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >firstOpenTimeStart<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >VIP开通时间范围-开始<br>格式: 2022-05-09</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >firstOpenTimeEnd<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >VIP开通时间范围-结束<br>格式: 2022-05-09</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >vipExpireTimeStart<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >VIP过期时间范围-开始<br>格式: 2022-05-09</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >vipExpireTimeEnd<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >VIP过期时间范围-结束<br>格式: 2022-05-09</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<h3 >出参示例</h3>
+<pre><code class="language-json">{
+  "success": true,
+  "code": 200,
+  "message": "错误信息56",
+  "data": [
+    {
+      "userId": 305,
+      "vipType": 3,
+      "vipExpireTime": "2022-05-09T15:52:08.550+0000",
+      "vipFirstOpenTime": "2022-05-09T14:54:04.538+0000",
+      "userNickName": "用户昵称107",
+      "userRealName": "用户姓名10",
+      "userGender": 2,
+      "userAge": 18,
+      "userPhone": "13123339966",
+      "userEmail": "2333@163.com",
+      "userAvatar": "https://img.xxx.com/xxxxxxx"
+    },
+    {
+      "userId": 305,
+      "vipType": 3,
+      "vipExpireTime": "2022-05-09T15:52:08.550+0000",
+      "vipFirstOpenTime": "2022-05-09T14:54:04.538+0000",
+      "userNickName": "用户昵称107",
+      "userRealName": "用户姓名10",
+      "userGender": 2,
+      "userAge": 18,
+      "userPhone": "13123339966",
+      "userEmail": "2333@163.com",
+      "userAvatar": "https://img.xxx.com/xxxxxxx"
+    }
+  ],
+  "totalCount": 259
+}</code></pre>
+
+<p ></p>
+<h3 >出参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong><br/></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >success<br/></td>
+<td ><strong>Boolean</strong><br/></td>
+<td >请求是否成功</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >code<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >状态码<br>200: 代表成功<br>其它代表异常</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >message<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >错误信息</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >data<br/></td>
+<td ><strong>List&lt;VipUserResponse&gt;</strong><br/></td>
+<td >返回数据</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userId<br/></td>
+<td ><strong>Long</strong><br/></td>
+<td >用户ID-主键</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ vipType<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >VIP 类型<br>1:青铜<br>2:白银<br>3:黄金</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ vipExpireTime<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >VIP 过期时间</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ vipFirstOpenTime<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >VIP 首次开通时间</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userNickName<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >用户昵称</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userRealName<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >用户姓名</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userGender<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >用户性别<br>0:保密<br>1:男<br>2:女</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userAge<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >用户年龄</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userPhone<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >联系方式-手机号</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userEmail<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >联系方式-电子邮箱</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ userAvatar<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >用户头像 url 地址</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >totalCount<br/></td>
+<td ><strong>Long</strong><br/></td>
+<td >分页-总条数</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<p ></p>
+<h1 id='为用户开通VIP'>为用户开通VIP</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/openVip</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">userId:1
+vipType:3
+openingTime:1
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userId<br/></td>
+<td ><strong>Long</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >用户ID</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >vipType<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >VIP类型<br>1:青铜<br>2:白银<br>3:黄金</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >openingTime<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >VIP 开通时长(单位:月)</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<h3 >出参示例</h3>
+<pre><code class="language-json">{
+  "success": true,
+  "code": 200,
+  "message": "错误信息52",
+  "data": true
+}</code></pre>
+
+<p ></p>
+<h3 >出参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong><br/></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >success<br/></td>
+<td ><strong>Boolean</strong><br/></td>
+<td >请求是否成功</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >code<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >状态码<br>200: 代表成功<br>其它代表异常</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >message<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >错误信息</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >data<br/></td>
+<td ><strong>Boolean</strong><br/></td>
+<td >返回数据</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<p ></p>
+<h2 >更多信息</h2>
+<h3 >code 更多含义</h3>
+<p ></p>
+<table>
+<tr>
+<th >Code</th>
+<th >含义</th>
+<th >出现原因</th>
+</tr>
+<tr>
+<td ><strong>10021</strong></td>
+<td >用户余额不足</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td ><strong>10022</strong></td>
+<td >VIP类型不存在</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td ><strong>10023</strong></td>
+<td >开通时长不能为负数</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h1 id='为用户续费VIP'>为用户续费VIP</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/renewVip</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">userId:1
+openingTime:1
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userId<br/></td>
+<td ><strong>Long</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >用户ID</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >openingTime<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >VIP 续费时长(单位:月)</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<h3 >出参示例</h3>
+<pre><code class="language-json">{
+  "success": true,
+  "code": 200,
+  "message": "错误信息68",
+  "data": false
+}</code></pre>
+
+<p ></p>
+<h3 >出参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong><br/></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >success<br/></td>
+<td ><strong>Boolean</strong><br/></td>
+<td >请求是否成功</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >code<br/></td>
+<td ><strong>Integer</strong><br/></td>
+<td >状态码<br>200: 代表成功<br>其它代表异常</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >message<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >错误信息</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >data<br/></td>
+<td ><strong>Boolean</strong><br/></td>
+<td >返回数据</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<p ></p>
+<h2 >更多信息</h2>
+<h3 >code 更多含义</h3>
+<p ></p>
+<table>
+<tr>
+<th >Code</th>
+<th >含义</th>
+<th >出现原因</th>
+</tr>
+<tr>
+<td ><strong>10021</strong></td>
+<td >用户余额不足</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td ><strong>10023</strong></td>
+<td >开通时长不能为负数</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+
+</article>
+</body>
+</html>
