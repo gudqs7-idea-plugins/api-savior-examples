@@ -1,6 +1,6 @@
 package cn.gudqs.example.restful.order.dto.request;
 
-import cn.gudqs.example.restful.base.BasePageRequest;
+import cn.gudqs.example.base.BasePageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

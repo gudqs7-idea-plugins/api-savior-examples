@@ -1,4 +1,4 @@
-package cn.gudqs.example.restful.base;
+package cn.gudqs.example.base;
 
 import lombok.Data;
 

@@ -1,6 +1,6 @@
 package cn.gudqs.example.restful.order.controller;
 
-import cn.gudqs.example.restful.base.BaseResponse;
+import cn.gudqs.example.base.BaseResponse;
 import cn.gudqs.example.restful.order.dto.request.BuyShopRequest;
 import cn.gudqs.example.restful.order.dto.request.BuyVipRequest;
 import org.springframework.web.bind.annotation.PostMapping;

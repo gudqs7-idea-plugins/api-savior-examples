@@ -1,6 +1,6 @@
 package cn.gudqs.example.restful.user.controller;
 
-import cn.gudqs.example.restful.base.BaseResponse;
+import cn.gudqs.example.base.BaseResponse;
 import cn.gudqs.example.restful.user.dto.request.CreateUserRequest;
 import cn.gudqs.example.restful.user.dto.request.QueryUserRequest;
 import cn.gudqs.example.restful.user.dto.request.UpdateUserRequest;

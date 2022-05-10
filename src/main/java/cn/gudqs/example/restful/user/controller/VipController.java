@@ -1,6 +1,6 @@
 package cn.gudqs.example.restful.user.controller;
 
-import cn.gudqs.example.restful.base.BaseResponse;
+import cn.gudqs.example.base.BaseResponse;
 import cn.gudqs.example.restful.user.dto.request.OpenVipRequest;
 import cn.gudqs.example.restful.user.dto.request.QueryVipUserRequest;
 import cn.gudqs.example.restful.user.dto.request.RenewVipRequest;
