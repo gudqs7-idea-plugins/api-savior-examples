@@ -1,12 +1,12 @@
 {
   "info": {
-    "_postman_id": "5972dfb9-b6c2-4d85-bbe9-27edb88a3a93",
+    "_postman_id": "9f4b17c2-ab4c-4837-b131-39349008b77b",
     "name": "example",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "docer.controller",
+      "name": "测试模块",
       "item": [
         {
           "name": "测试接口(测参数)",
@@ -149,14 +149,14 @@
                   "query": [
                     {
                       "key": "userIdList[0]",
-                      "value": "用户ID列表100",
+                      "value": "用户ID列表90",
                       "description": "用户ID列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userIdList[1]",
-                      "value": "用户ID列表49",
+                      "value": "用户ID列表45",
                       "description": "用户ID列表",
                       "type": "text",
                       "disabled": true
@@ -164,7 +164,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionParam?userIdList[0]\u003d用户ID列表5\u0026userIdList[1]\u003d用户ID列表67\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//userIdList[0]:用户ID列表5\n//userIdList[1]:用户ID列表67\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userIdList     | **List\\\u003cString\\\u003e**     | 否  |  用户ID列表 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionParam?userIdList[0]\u003d用户ID列表21\u0026userIdList[1]\u003d用户ID列表54\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//userIdList[0]:用户ID列表21\n//userIdList[1]:用户ID列表54\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userIdList     | **List\\\u003cString\\\u003e**     | 否  |  用户ID列表 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -185,14 +185,14 @@
                       "query": [
                         {
                           "key": "userIdList[0]",
-                          "value": "用户ID列表100",
+                          "value": "用户ID列表90",
                           "description": "用户ID列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userIdList[1]",
-                          "value": "用户ID列表49",
+                          "value": "用户ID列表45",
                           "description": "用户ID列表",
                           "type": "text",
                           "disabled": true
@@ -220,49 +220,49 @@
                   "urlencoded": [
                     {
                       "key": "testInt",
-                      "value": "112",
+                      "value": "23",
                       "description": "test int",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testLong",
-                      "value": "169",
+                      "value": "805",
                       "description": "test long",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testFloat",
-                      "value": "66.94743",
+                      "value": "28.709415",
                       "description": "test float",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testBoolean",
-                      "value": "true",
+                      "value": "false",
                       "description": "test boolean",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testString",
-                      "value": "test string70",
+                      "value": "test string110",
                       "description": "test string",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDate",
-                      "value": "2022-05-13T08:14:37.133+0000",
+                      "value": "2022-05-13T09:17:33.766+0000",
                       "description": "test date",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDecimal",
-                      "value": "54.34707929727417",
+                      "value": "635.2515578110974",
                       "description": "test decimal",
                       "type": "text",
                       "disabled": true
@@ -290,14 +290,14 @@
                     },
                     {
                       "key": "testCycle.stringList[0]",
-                      "value": "测试字符串list42",
+                      "value": "测试字符串list116",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringList[1]",
-                      "value": "测试字符串list4",
+                      "value": "测试字符串list36",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
@@ -311,14 +311,14 @@
                     },
                     {
                       "key": "testCycle.stringSet[0]",
-                      "value": "测试字符串set84",
+                      "value": "测试字符串set123",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringSet[1]",
-                      "value": "测试字符串set7",
+                      "value": "测试字符串set53",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
@@ -357,7 +357,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(基本类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testInt:20\n//testLong:667\n//testFloat:31.917881\n//testBoolean:false\n//testString:test string42\n//testDate:2022-05-12T09:32:07.578+0000\n//testDecimal:530.8924436998415\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list88\n//testCycle.stringList[1]:测试字符串list46\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set25\n//testCycle.stringSet[1]:测试字符串set47\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testInt     | **int**     | 否  |  test int |   |\r\n| testLong     | **long**     | 否  |  test long |   |\r\n| testFloat     | **float**     | 否  |  test float |   |\r\n| testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n| testString     | **String**     | 否  |  test string |   |\r\n| testDate     | **Date**     | 否  |  test date |   |\r\n| testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n| testNumber     | **Number**     | 否  |  test number |   |\r\n| testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|└─ list     | **List**     | 否  |  测试普通list |   |\r\n|└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(基本类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testInt:13\n//testLong:796\n//testFloat:44.152756\n//testBoolean:true\n//testString:test string123\n//testDate:2022-05-12T15:09:13.404+0000\n//testDecimal:647.174869188412\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list109\n//testCycle.stringList[1]:测试字符串list70\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set15\n//testCycle.stringSet[1]:测试字符串set76\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testInt     | **int**     | 否  |  test int |   |\r\n| testLong     | **long**     | 否  |  test long |   |\r\n| testFloat     | **float**     | 否  |  test float |   |\r\n| testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n| testString     | **String**     | 否  |  test string |   |\r\n| testDate     | **Date**     | 否  |  test date |   |\r\n| testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n| testNumber     | **Number**     | 否  |  test number |   |\r\n| testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|└─ list     | **List**     | 否  |  测试普通list |   |\r\n|└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -370,49 +370,49 @@
                       "urlencoded": [
                         {
                           "key": "testInt",
-                          "value": "112",
+                          "value": "23",
                           "description": "test int",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testLong",
-                          "value": "169",
+                          "value": "805",
                           "description": "test long",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testFloat",
-                          "value": "66.94743",
+                          "value": "28.709415",
                           "description": "test float",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testBoolean",
-                          "value": "true",
+                          "value": "false",
                           "description": "test boolean",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testString",
-                          "value": "test string70",
+                          "value": "test string110",
                           "description": "test string",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDate",
-                          "value": "2022-05-13T08:14:37.133+0000",
+                          "value": "2022-05-13T09:17:33.766+0000",
                           "description": "test date",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDecimal",
-                          "value": "54.34707929727417",
+                          "value": "635.2515578110974",
                           "description": "test decimal",
                           "type": "text",
                           "disabled": true
@@ -440,14 +440,14 @@
                         },
                         {
                           "key": "testCycle.stringList[0]",
-                          "value": "测试字符串list42",
+                          "value": "测试字符串list116",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringList[1]",
-                          "value": "测试字符串list4",
+                          "value": "测试字符串list36",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
@@ -461,14 +461,14 @@
                         },
                         {
                           "key": "testCycle.stringSet[0]",
-                          "value": "测试字符串set84",
+                          "value": "测试字符串set123",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringSet[1]",
-                          "value": "测试字符串set7",
+                          "value": "测试字符串set53",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
@@ -527,49 +527,49 @@
                   "urlencoded": [
                     {
                       "key": "testCustomClass.testInt",
-                      "value": "107",
+                      "value": "69",
                       "description": "test int",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testLong",
-                      "value": "274",
+                      "value": "747",
                       "description": "test long",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testFloat",
-                      "value": "83.17872",
+                      "value": "11.228403",
                       "description": "test float",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testBoolean",
-                      "value": "true",
+                      "value": "false",
                       "description": "test boolean",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testString",
-                      "value": "test string88",
+                      "value": "test string55",
                       "description": "test string",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testDate",
-                      "value": "2022-05-12T12:26:46.971+0000",
+                      "value": "2022-05-12T20:28:45.565+0000",
                       "description": "test date",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCustomClass.testDecimal",
-                      "value": "593.9278655711605",
+                      "value": "665.9417767353596",
                       "description": "test decimal",
                       "type": "text",
                       "disabled": true
@@ -597,14 +597,14 @@
                     },
                     {
                       "key": "stringList[0]",
-                      "value": "测试字符串list20",
+                      "value": "测试字符串list85",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "stringList[1]",
-                      "value": "测试字符串list114",
+                      "value": "测试字符串list89",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
@@ -618,14 +618,14 @@
                     },
                     {
                       "key": "stringSet[0]",
-                      "value": "测试字符串set32",
+                      "value": "测试字符串set103",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "stringSet[1]",
-                      "value": "测试字符串set62",
+                      "value": "测试字符串set79",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
@@ -664,7 +664,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(普通Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSinglePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testCustomClass.testInt:75\n//testCustomClass.testLong:397\n//testCustomClass.testFloat:62.020367\n//testCustomClass.testBoolean:true\n//testCustomClass.testString:test string91\n//testCustomClass.testDate:2022-05-13T04:46:03.564+0000\n//testCustomClass.testDecimal:173.8112028904952\n//testCustomClass.testNumber:0\n//testCustomClass.testCycle:{}\n//list:{}\n//stringList[0]:测试字符串list94\n//stringList[1]:测试字符串list4\n//set:{}\n//stringSet[0]:测试字符串set113\n//stringSet[1]:测试字符串set49\n//map:{}\n//objMap.key1:{}\n//objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n| list     | **List**     | 否  |  测试普通list |   |\r\n| stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n| set     | **Set**     | 否  |  测试普通set |   |\r\n| stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n| map     | **Map**     | 否  |  测试普通Map |   |\r\n| objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(普通Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSinglePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testCustomClass.testInt:80\n//testCustomClass.testLong:100\n//testCustomClass.testFloat:84.50378\n//testCustomClass.testBoolean:true\n//testCustomClass.testString:test string30\n//testCustomClass.testDate:2022-05-13T03:32:30.752+0000\n//testCustomClass.testDecimal:820.3907402062686\n//testCustomClass.testNumber:0\n//testCustomClass.testCycle:{}\n//list:{}\n//stringList[0]:测试字符串list30\n//stringList[1]:测试字符串list36\n//set:{}\n//stringSet[0]:测试字符串set123\n//stringSet[1]:测试字符串set32\n//map:{}\n//objMap.key1:{}\n//objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n| list     | **List**     | 否  |  测试普通list |   |\r\n| stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n| set     | **Set**     | 否  |  测试普通set |   |\r\n| stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n| map     | **Map**     | 否  |  测试普通Map |   |\r\n| objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -677,49 +677,49 @@
                       "urlencoded": [
                         {
                           "key": "testCustomClass.testInt",
-                          "value": "107",
+                          "value": "69",
                           "description": "test int",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testLong",
-                          "value": "274",
+                          "value": "747",
                           "description": "test long",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testFloat",
-                          "value": "83.17872",
+                          "value": "11.228403",
                           "description": "test float",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testBoolean",
-                          "value": "true",
+                          "value": "false",
                           "description": "test boolean",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testString",
-                          "value": "test string88",
+                          "value": "test string55",
                           "description": "test string",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testDate",
-                          "value": "2022-05-12T12:26:46.971+0000",
+                          "value": "2022-05-12T20:28:45.565+0000",
                           "description": "test date",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCustomClass.testDecimal",
-                          "value": "593.9278655711605",
+                          "value": "665.9417767353596",
                           "description": "test decimal",
                           "type": "text",
                           "disabled": true
@@ -747,14 +747,14 @@
                         },
                         {
                           "key": "stringList[0]",
-                          "value": "测试字符串list20",
+                          "value": "测试字符串list85",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "stringList[1]",
-                          "value": "测试字符串list114",
+                          "value": "测试字符串list89",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
@@ -768,14 +768,14 @@
                         },
                         {
                           "key": "stringSet[0]",
-                          "value": "测试字符串set32",
+                          "value": "测试字符串set103",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "stringSet[1]",
-                          "value": "测试字符串set62",
+                          "value": "测试字符串set79",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
@@ -834,49 +834,49 @@
                   "urlencoded": [
                     {
                       "key": "data.testInt",
-                      "value": "11",
+                      "value": "39",
                       "description": "test int",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testLong",
-                      "value": "251",
+                      "value": "576",
                       "description": "test long",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testFloat",
-                      "value": "11.889885",
+                      "value": "51.150154",
                       "description": "test float",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testBoolean",
-                      "value": "false",
+                      "value": "true",
                       "description": "test boolean",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testString",
-                      "value": "test string36",
+                      "value": "test string63",
                       "description": "test string",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testDate",
-                      "value": "2022-05-12T23:42:45.345+0000",
+                      "value": "2022-05-12T19:04:25.378+0000",
                       "description": "test date",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testDecimal",
-                      "value": "542.6010598212451",
+                      "value": "995.0555700356888",
                       "description": "test decimal",
                       "type": "text",
                       "disabled": true
@@ -904,14 +904,14 @@
                     },
                     {
                       "key": "data.testCycle.stringList[0]",
-                      "value": "测试字符串list79",
+                      "value": "测试字符串list112",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testCycle.stringList[1]",
-                      "value": "测试字符串list4",
+                      "value": "测试字符串list104",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
@@ -925,14 +925,14 @@
                     },
                     {
                       "key": "data.testCycle.stringSet[0]",
-                      "value": "测试字符串set113",
+                      "value": "测试字符串set20",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "data.testCycle.stringSet[1]",
-                      "value": "测试字符串set19",
+                      "value": "测试字符串set110",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
@@ -1027,7 +1027,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(带泛型的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//data.testInt:122\n//data.testLong:616\n//data.testFloat:37.888443\n//data.testBoolean:false\n//data.testString:test string81\n//data.testDate:2022-05-12T22:49:35.661+0000\n//data.testDecimal:314.9278334247564\n//data.testNumber:0\n//data.testCycle.testCustomClass:{}\n//data.testCycle.list:{}\n//data.testCycle.stringList[0]:测试字符串list14\n//data.testCycle.stringList[1]:测试字符串list45\n//data.testCycle.set:{}\n//data.testCycle.stringSet[0]:测试字符串set31\n//data.testCycle.stringSet[1]:测试字符串set7\n//data.testCycle.map:{}\n//data.testCycle.objMap.key1:{}\n//data.testCycle.objMap.key2:{}\n//dataList[0]:{}\n//dataList[1]:{}\n//dataSet[0]:{}\n//dataSet[1]:{}\n//dataCollection[0]:{}\n//dataCollection[1]:{}\n//genericMap.key1:{}\n//genericMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| data     | **TestBasePojo**     | 否  |  测试泛型 |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n| dataList     | **List\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合List |   |\r\n| dataSet     | **Set\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Set |   |\r\n| dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Collection |   |\r\n| genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**     | 否  |  测试带泛型Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(带泛型的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//data.testInt:41\n//data.testLong:995\n//data.testFloat:91.83115\n//data.testBoolean:true\n//data.testString:test string108\n//data.testDate:2022-05-13T00:40:20.424+0000\n//data.testDecimal:957.9254552477089\n//data.testNumber:0\n//data.testCycle.testCustomClass:{}\n//data.testCycle.list:{}\n//data.testCycle.stringList[0]:测试字符串list77\n//data.testCycle.stringList[1]:测试字符串list76\n//data.testCycle.set:{}\n//data.testCycle.stringSet[0]:测试字符串set105\n//data.testCycle.stringSet[1]:测试字符串set99\n//data.testCycle.map:{}\n//data.testCycle.objMap.key1:{}\n//data.testCycle.objMap.key2:{}\n//dataList[0]:{}\n//dataList[1]:{}\n//dataSet[0]:{}\n//dataSet[1]:{}\n//dataCollection[0]:{}\n//dataCollection[1]:{}\n//genericMap.key1:{}\n//genericMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| data     | **TestBasePojo**     | 否  |  测试泛型 |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n| dataList     | **List\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合List |   |\r\n| dataSet     | **Set\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Set |   |\r\n| dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Collection |   |\r\n| genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**     | 否  |  测试带泛型Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -1040,49 +1040,49 @@
                       "urlencoded": [
                         {
                           "key": "data.testInt",
-                          "value": "11",
+                          "value": "39",
                           "description": "test int",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testLong",
-                          "value": "251",
+                          "value": "576",
                           "description": "test long",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testFloat",
-                          "value": "11.889885",
+                          "value": "51.150154",
                           "description": "test float",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testBoolean",
-                          "value": "false",
+                          "value": "true",
                           "description": "test boolean",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testString",
-                          "value": "test string36",
+                          "value": "test string63",
                           "description": "test string",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testDate",
-                          "value": "2022-05-12T23:42:45.345+0000",
+                          "value": "2022-05-12T19:04:25.378+0000",
                           "description": "test date",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testDecimal",
-                          "value": "542.6010598212451",
+                          "value": "995.0555700356888",
                           "description": "test decimal",
                           "type": "text",
                           "disabled": true
@@ -1110,14 +1110,14 @@
                         },
                         {
                           "key": "data.testCycle.stringList[0]",
-                          "value": "测试字符串list79",
+                          "value": "测试字符串list112",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testCycle.stringList[1]",
-                          "value": "测试字符串list4",
+                          "value": "测试字符串list104",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
@@ -1131,14 +1131,14 @@
                         },
                         {
                           "key": "data.testCycle.stringSet[0]",
-                          "value": "测试字符串set113",
+                          "value": "测试字符串set20",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "data.testCycle.stringSet[1]",
-                          "value": "测试字符串set19",
+                          "value": "测试字符串set110",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
@@ -1322,21 +1322,21 @@
                   "urlencoded": [
                     {
                       "key": "userId",
-                      "value": "505",
+                      "value": "373",
                       "description": "用户ID",
                       "type": "text",
                       "disabled": false
                     },
                     {
                       "key": "userAge",
-                      "value": "77",
+                      "value": "103",
                       "description": "用户年龄",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "amount",
-                      "value": "50.283657",
+                      "value": "71.85385",
                       "description": "用户金额",
                       "type": "text",
                       "disabled": true
@@ -1361,7 +1361,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试多参数(基本类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiBaseParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nuserId:870\n//userAge:124\n//amount:89.07396\n//userName:gudqs7\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userId     | **long**     | **是**  |  用户ID |   |\r\n| userAge     | **int**     | 否  |  用户年龄 | 不能为负数  |\r\n| amount     | **float**     | 否  |  用户金额 |   |\r\n| userName     | **String**     | 否  |  用户姓名 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试多参数(基本类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiBaseParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nuserId:678\n//userAge:66\n//amount:76.5987\n//userName:gudqs7\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userId     | **long**     | **是**  |  用户ID |   |\r\n| userAge     | **int**     | 否  |  用户年龄 | 不能为负数  |\r\n| amount     | **float**     | 否  |  用户金额 |   |\r\n| userName     | **String**     | 否  |  用户姓名 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -1374,21 +1374,21 @@
                       "urlencoded": [
                         {
                           "key": "userId",
-                          "value": "505",
+                          "value": "373",
                           "description": "用户ID",
                           "type": "text",
                           "disabled": false
                         },
                         {
                           "key": "userAge",
-                          "value": "77",
+                          "value": "103",
                           "description": "用户年龄",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "amount",
-                          "value": "50.283657",
+                          "value": "71.85385",
                           "description": "用户金额",
                           "type": "text",
                           "disabled": true
@@ -1433,42 +1433,42 @@
                   "urlencoded": [
                     {
                       "key": "userIdList[0]",
-                      "value": "655",
+                      "value": "678",
                       "description": "用户ID列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userIdList[1]",
-                      "value": "971",
+                      "value": "989",
                       "description": "用户ID列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userAgeList[0]",
-                      "value": "112",
+                      "value": "84",
                       "description": "用户年龄列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userAgeList[1]",
-                      "value": "51",
+                      "value": "13",
                       "description": "用户年龄列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userNameList[0]",
-                      "value": "用户姓名列表33",
+                      "value": "用户姓名列表74",
                       "description": "用户姓名列表",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "userNameList[1]",
-                      "value": "用户姓名列表121",
+                      "value": "用户姓名列表84",
                       "description": "用户姓名列表",
                       "type": "text",
                       "disabled": true
@@ -1486,7 +1486,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试多参数(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiCollectionParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//userIdList[0]:166\n//userIdList[1]:394\n//userAgeList[0]:76\n//userAgeList[1]:53\n//userNameList[0]:用户姓名列表108\n//userNameList[1]:用户姓名列表88\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userIdList     | **List\\\u003cLong\\\u003e**     | 否  |  用户ID列表 |   |\r\n| userAgeList     | **List\\\u003cInteger\\\u003e**     | 否  |  用户年龄列表 |   |\r\n| userNameList     | **List\\\u003cString\\\u003e**     | 否  |  用户姓名列表 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试多参数(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiCollectionParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//userIdList[0]:634\n//userIdList[1]:885\n//userAgeList[0]:88\n//userAgeList[1]:68\n//userNameList[0]:用户姓名列表40\n//userNameList[1]:用户姓名列表41\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| userIdList     | **List\\\u003cLong\\\u003e**     | 否  |  用户ID列表 |   |\r\n| userAgeList     | **List\\\u003cInteger\\\u003e**     | 否  |  用户年龄列表 |   |\r\n| userNameList     | **List\\\u003cString\\\u003e**     | 否  |  用户姓名列表 |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -1499,42 +1499,42 @@
                       "urlencoded": [
                         {
                           "key": "userIdList[0]",
-                          "value": "655",
+                          "value": "678",
                           "description": "用户ID列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userIdList[1]",
-                          "value": "971",
+                          "value": "989",
                           "description": "用户ID列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userAgeList[0]",
-                          "value": "112",
+                          "value": "84",
                           "description": "用户年龄列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userAgeList[1]",
-                          "value": "51",
+                          "value": "13",
                           "description": "用户年龄列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userNameList[0]",
-                          "value": "用户姓名列表33",
+                          "value": "用户姓名列表74",
                           "description": "用户姓名列表",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "userNameList[1]",
-                          "value": "用户姓名列表121",
+                          "value": "用户姓名列表84",
                           "description": "用户姓名列表",
                           "type": "text",
                           "disabled": true
@@ -1572,49 +1572,49 @@
                   "urlencoded": [
                     {
                       "key": "testInt",
-                      "value": "15",
+                      "value": "112",
                       "description": "test int",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testLong",
-                      "value": "96",
+                      "value": "822",
                       "description": "test long",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testFloat",
-                      "value": "37.881992",
+                      "value": "49.1637",
                       "description": "test float",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testBoolean",
-                      "value": "false",
+                      "value": "true",
                       "description": "test boolean",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testString",
-                      "value": "test string19",
+                      "value": "test string12",
                       "description": "test string",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDate",
-                      "value": "2022-05-12T18:28:38.773+0000",
+                      "value": "2022-05-13T01:33:52.240+0000",
                       "description": "test date",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDecimal",
-                      "value": "468.9586571201151",
+                      "value": "314.6796269314274",
                       "description": "test decimal",
                       "type": "text",
                       "disabled": true
@@ -1642,14 +1642,14 @@
                     },
                     {
                       "key": "testCycle.stringList[0]",
-                      "value": "测试字符串list116",
+                      "value": "测试字符串list13",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringList[1]",
-                      "value": "测试字符串list16",
+                      "value": "测试字符串list94",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
@@ -1663,14 +1663,14 @@
                     },
                     {
                       "key": "testCycle.stringSet[0]",
-                      "value": "测试字符串set13",
+                      "value": "测试字符串set43",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringSet[1]",
-                      "value": "测试字符串set77",
+                      "value": "测试字符串set75",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
@@ -1779,7 +1779,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试多参数(Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiPojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testInt:97\n//testLong:48\n//testFloat:99.88112\n//testBoolean:false\n//testString:test string21\n//testDate:2022-05-13T00:44:59.844+0000\n//testDecimal:842.1966849725989\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list100\n//testCycle.stringList[1]:测试字符串list111\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set76\n//testCycle.stringSet[1]:测试字符串set99\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n//testPojo:{}\n//data:{}\n//dataList[0]:{}\n//dataList[1]:{}\n//dataSet[0]:{}\n//dataSet[1]:{}\n//dataCollection[0]:{}\n//dataCollection[1]:{}\n//genericMap.key1:{}\n//genericMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n| testPojo     | **TestPojo**     | 否  |  pojo |   |\r\n| testGenericPojo     | **TestGenericPojo\\\u003cTestBasePojo\\\u003e**     | 否  |  泛型pojo |   |\r\n|└─ data     | **TestBasePojo**     | 否  |  测试泛型 |   |\r\n|└─ dataList     | **List\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合List |   |\r\n|└─ dataSet     | **Set\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Set |   |\r\n|└─ dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Collection |   |\r\n|└─ genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**     | 否  |  测试带泛型Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试多参数(Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiPojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testInt:39\n//testLong:838\n//testFloat:64.01842\n//testBoolean:false\n//testString:test string52\n//testDate:2022-05-12T23:00:53.070+0000\n//testDecimal:463.96246873641127\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list121\n//testCycle.stringList[1]:测试字符串list88\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set35\n//testCycle.stringSet[1]:测试字符串set49\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n//testPojo:{}\n//data:{}\n//dataList[0]:{}\n//dataList[1]:{}\n//dataSet[0]:{}\n//dataSet[1]:{}\n//dataCollection[0]:{}\n//dataCollection[1]:{}\n//genericMap.key1:{}\n//genericMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n| testPojo     | **TestPojo**     | 否  |  pojo |   |\r\n| testGenericPojo     | **TestGenericPojo\\\u003cTestBasePojo\\\u003e**     | 否  |  泛型pojo |   |\r\n|└─ data     | **TestBasePojo**     | 否  |  测试泛型 |   |\r\n|└─ dataList     | **List\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合List |   |\r\n|└─ dataSet     | **Set\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Set |   |\r\n|└─ dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**     | 否  |  测试泛型集合Collection |   |\r\n|└─ genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**     | 否  |  测试带泛型Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -1792,49 +1792,49 @@
                       "urlencoded": [
                         {
                           "key": "testInt",
-                          "value": "15",
+                          "value": "112",
                           "description": "test int",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testLong",
-                          "value": "96",
+                          "value": "822",
                           "description": "test long",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testFloat",
-                          "value": "37.881992",
+                          "value": "49.1637",
                           "description": "test float",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testBoolean",
-                          "value": "false",
+                          "value": "true",
                           "description": "test boolean",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testString",
-                          "value": "test string19",
+                          "value": "test string12",
                           "description": "test string",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDate",
-                          "value": "2022-05-12T18:28:38.773+0000",
+                          "value": "2022-05-13T01:33:52.240+0000",
                           "description": "test date",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDecimal",
-                          "value": "468.9586571201151",
+                          "value": "314.6796269314274",
                           "description": "test decimal",
                           "type": "text",
                           "disabled": true
@@ -1862,14 +1862,14 @@
                         },
                         {
                           "key": "testCycle.stringList[0]",
-                          "value": "测试字符串list116",
+                          "value": "测试字符串list13",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringList[1]",
-                          "value": "测试字符串list16",
+                          "value": "测试字符串list94",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
@@ -1883,14 +1883,14 @@
                         },
                         {
                           "key": "testCycle.stringSet[0]",
-                          "value": "测试字符串set13",
+                          "value": "测试字符串set43",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringSet[1]",
-                          "value": "测试字符串set77",
+                          "value": "测试字符串set75",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
@@ -2033,21 +2033,21 @@
                     },
                     {
                       "key": "testInt",
-                      "value": "107",
+                      "value": "17",
                       "description": "test int",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testLong",
-                      "value": "779",
+                      "value": "862",
                       "description": "test long",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testFloat",
-                      "value": "48.63815",
+                      "value": "19.314224",
                       "description": "test float",
                       "type": "text",
                       "disabled": true
@@ -2061,21 +2061,21 @@
                     },
                     {
                       "key": "testString",
-                      "value": "test string100",
+                      "value": "test string56",
                       "description": "test string",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDate",
-                      "value": "2022-05-12T20:32:42.346+0000",
+                      "value": "2022-05-12T17:41:43.525+0000",
                       "description": "test date",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testDecimal",
-                      "value": "154.05357476161373",
+                      "value": "550.3009960125639",
                       "description": "test decimal",
                       "type": "text",
                       "disabled": true
@@ -2103,14 +2103,14 @@
                     },
                     {
                       "key": "testCycle.stringList[0]",
-                      "value": "测试字符串list33",
+                      "value": "测试字符串list6",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringList[1]",
-                      "value": "测试字符串list15",
+                      "value": "测试字符串list123",
                       "description": "测试字符串list",
                       "type": "text",
                       "disabled": true
@@ -2124,14 +2124,14 @@
                     },
                     {
                       "key": "testCycle.stringSet[0]",
-                      "value": "测试字符串set99",
+                      "value": "测试字符串set25",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
                     },
                     {
                       "key": "testCycle.stringSet[1]",
-                      "value": "测试字符串set28",
+                      "value": "测试字符串set120",
                       "description": "测试字符串set",
                       "type": "text",
                       "disabled": true
@@ -2170,7 +2170,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试多个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nfile:@\"/D:/wq-develop/code/docer-savior-plugin-usage-examples/a.txt\"\n//file2:@\"/C:/Users/wq/Downloads/a.txt\"\n//testInt:103\n//testLong:305\n//testFloat:70.101814\n//testBoolean:false\n//testString:test string51\n//testDate:2022-05-13T07:58:30.451+0000\n//testDecimal:545.3026414092769\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list10\n//testCycle.stringList[1]:测试字符串list71\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set105\n//testCycle.stringSet[1]:测试字符串set34\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | **是**  |  文件1 |   |\r\n| file2     | **MultipartFile**     | 否  |  文件2 |   |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
+                "description": "# 测试多个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testMultiFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nfile:@\"/D:/wq-develop/code/docer-savior-plugin-usage-examples/a.txt\"\n//file2:@\"/C:/Users/wq/Downloads/a.txt\"\n//testInt:9\n//testLong:852\n//testFloat:33.001938\n//testBoolean:false\n//testString:test string1\n//testDate:2022-05-13T04:42:04.989+0000\n//testDecimal:296.6122684187076\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list30\n//testCycle.stringList[1]:测试字符串list34\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set71\n//testCycle.stringSet[1]:测试字符串set36\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | **是**  |  文件1 |   |\r\n| file2     | **MultipartFile**     | 否  |  文件2 |   |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2197,21 +2197,21 @@
                         },
                         {
                           "key": "testInt",
-                          "value": "107",
+                          "value": "17",
                           "description": "test int",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testLong",
-                          "value": "779",
+                          "value": "862",
                           "description": "test long",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testFloat",
-                          "value": "48.63815",
+                          "value": "19.314224",
                           "description": "test float",
                           "type": "text",
                           "disabled": true
@@ -2225,21 +2225,21 @@
                         },
                         {
                           "key": "testString",
-                          "value": "test string100",
+                          "value": "test string56",
                           "description": "test string",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDate",
-                          "value": "2022-05-12T20:32:42.346+0000",
+                          "value": "2022-05-12T17:41:43.525+0000",
                           "description": "test date",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testDecimal",
-                          "value": "154.05357476161373",
+                          "value": "550.3009960125639",
                           "description": "test decimal",
                           "type": "text",
                           "disabled": true
@@ -2267,14 +2267,14 @@
                         },
                         {
                           "key": "testCycle.stringList[0]",
-                          "value": "测试字符串list33",
+                          "value": "测试字符串list6",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringList[1]",
-                          "value": "测试字符串list15",
+                          "value": "测试字符串list123",
                           "description": "测试字符串list",
                           "type": "text",
                           "disabled": true
@@ -2288,14 +2288,14 @@
                         },
                         {
                           "key": "testCycle.stringSet[0]",
-                          "value": "测试字符串set99",
+                          "value": "测试字符串set25",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
                         },
                         {
                           "key": "testCycle.stringSet[1]",
-                          "value": "测试字符串set28",
+                          "value": "测试字符串set120",
                           "description": "测试字符串set",
                           "type": "text",
                           "disabled": true
@@ -2419,7 +2419,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(基本类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBaseReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n98\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| root     | **int**    |  用户ID |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(基本类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBaseReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n67\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| root     | **int**    |  用户ID |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2447,7 +2447,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": 40\n}"
+                  "body": "{\n  \"root\": 63\n}"
                 }
               ]
             },
@@ -2468,7 +2468,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n[\n  \"用户ID列表119\",\n  \"用户ID列表66\"\n]\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| root     | **List\\\u003cString\\\u003e**    |  用户ID列表 |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(集合类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n[\n  \"用户ID列表39\",\n  \"用户ID列表34\"\n]\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| root     | **List\\\u003cString\\\u003e**    |  用户ID列表 |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2494,7 +2494,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": [\n    \"用户ID列表123\",\n    \"用户ID列表122\"\n  ]\n}"
+                  "body": "{\n  \"root\": [\n    \"用户ID列表124\",\n    \"用户ID列表19\"\n  ]\n}"
                 }
               ]
             },
@@ -2517,7 +2517,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(基本类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"testInt\": 121,\n  \"testLong\": 148,\n  \"testFloat\": 57.07081,\n  \"testBoolean\": true,\n  \"testString\": \"test string27\",\n  \"testDate\": \"2022-05-13T01:56:07.329+0000\",\n  \"testDecimal\": 259.9001349385353,\n  \"testNumber\": 0,\n  \"testCycle\": {\n    \"testCustomClass\": {},\n    \"list\": {},\n    \"stringList\": [\n      \"测试字符串list113\",\n      \"测试字符串list82\"\n    ],\n    \"set\": {},\n    \"stringSet\": [\n      \"测试字符串set24\",\n      \"测试字符串set56\"\n    ],\n    \"map\": {},\n    \"objMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| testInt     | **int**    |  test int |   |\r\n| testLong     | **long**    |  test long |   |\r\n| testFloat     | **float**    |  test float |   |\r\n| testBoolean     | **boolean**    |  test boolean |   |\r\n| testString     | **String**    |  test string |   |\r\n| testDate     | **Date**    |  test date |   |\r\n| testDecimal     | **BigDecimal**    |  test decimal |   |\r\n| testNumber     | **Number**    |  test number |   |\r\n| testCycle     | **TestPojo**    |  测试循环 |   |\r\n|└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|└─ list     | **List**    |  测试普通list |   |\r\n|└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|└─ set     | **Set**    |  测试普通set |   |\r\n|└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|└─ map     | **Map**    |  测试普通Map |   |\r\n|└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(基本类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"testInt\": 54,\n  \"testLong\": 318,\n  \"testFloat\": 93.97229,\n  \"testBoolean\": false,\n  \"testString\": \"test string80\",\n  \"testDate\": \"2022-05-12T13:58:25.195+0000\",\n  \"testDecimal\": 177.39197171119898,\n  \"testNumber\": 0,\n  \"testCycle\": {\n    \"testCustomClass\": {},\n    \"list\": {},\n    \"stringList\": [\n      \"测试字符串list34\",\n      \"测试字符串list21\"\n    ],\n    \"set\": {},\n    \"stringSet\": [\n      \"测试字符串set95\",\n      \"测试字符串set35\"\n    ],\n    \"map\": {},\n    \"objMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| testInt     | **int**    |  test int |   |\r\n| testLong     | **long**    |  test long |   |\r\n| testFloat     | **float**    |  test float |   |\r\n| testBoolean     | **boolean**    |  test boolean |   |\r\n| testString     | **String**    |  test string |   |\r\n| testDate     | **Date**    |  test date |   |\r\n| testDecimal     | **BigDecimal**    |  test decimal |   |\r\n| testNumber     | **Number**    |  test number |   |\r\n| testCycle     | **TestPojo**    |  测试循环 |   |\r\n|└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|└─ list     | **List**    |  测试普通list |   |\r\n|└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|└─ set     | **Set**    |  测试普通set |   |\r\n|└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|└─ map     | **Map**    |  测试普通Map |   |\r\n|└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2545,7 +2545,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": {\n    \"testInt\": 28,\n    \"testLong\": 407,\n    \"testFloat\": 99.09459,\n    \"testBoolean\": false,\n    \"testString\": \"test string35\",\n    \"testDate\": \"2022-05-13T06:24:34.293+0000\",\n    \"testDecimal\": 746.7940712073207,\n    \"testNumber\": 0,\n    \"testCycle\": {\n      \"testCustomClass\": {},\n      \"list\": {},\n      \"stringList\": [\n        \"测试字符串list22\",\n        \"测试字符串list39\"\n      ],\n      \"set\": {},\n      \"stringSet\": [\n        \"测试字符串set38\",\n        \"测试字符串set86\"\n      ],\n      \"map\": {},\n      \"objMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  }\n}"
+                  "body": "{\n  \"root\": {\n    \"testInt\": 90,\n    \"testLong\": 174,\n    \"testFloat\": 60.435913,\n    \"testBoolean\": true,\n    \"testString\": \"test string6\",\n    \"testDate\": \"2022-05-12T23:33:01.463+0000\",\n    \"testDecimal\": 941.4132402376943,\n    \"testNumber\": 0,\n    \"testCycle\": {\n      \"testCustomClass\": {},\n      \"list\": {},\n      \"stringList\": [\n        \"测试字符串list64\",\n        \"测试字符串list3\"\n      ],\n      \"set\": {},\n      \"stringSet\": [\n        \"测试字符串set91\",\n        \"测试字符串set106\"\n      ],\n      \"map\": {},\n      \"objMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  }\n}"
                 }
               ]
             },
@@ -2568,7 +2568,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(普通Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSinglePojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"testCustomClass\": {\n    \"testInt\": 70,\n    \"testLong\": 631,\n    \"testFloat\": 73.1162,\n    \"testBoolean\": true,\n    \"testString\": \"test string67\",\n    \"testDate\": \"2022-05-13T05:40:37.225+0000\",\n    \"testDecimal\": 237.7100611291319,\n    \"testNumber\": 0,\n    \"testCycle\": {}\n  },\n  \"list\": {},\n  \"stringList\": [\n    \"测试字符串list78\",\n    \"测试字符串list52\"\n  ],\n  \"set\": {},\n  \"stringSet\": [\n    \"测试字符串set18\",\n    \"测试字符串set63\"\n  ],\n  \"map\": {},\n  \"objMap\": {\n    \"key1\": {},\n    \"key2\": {}\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|└─ testInt     | **int**    |  test int |   |\r\n|└─ testLong     | **long**    |  test long |   |\r\n|└─ testFloat     | **float**    |  test float |   |\r\n|└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|└─ testString     | **String**    |  test string |   |\r\n|└─ testDate     | **Date**    |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|└─ testNumber     | **Number**    |  test number |   |\r\n|└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n| list     | **List**    |  测试普通list |   |\r\n| stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n| set     | **Set**    |  测试普通set |   |\r\n| stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n| map     | **Map**    |  测试普通Map |   |\r\n| objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(普通Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSinglePojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"testCustomClass\": {\n    \"testInt\": 107,\n    \"testLong\": 169,\n    \"testFloat\": 11.992361,\n    \"testBoolean\": false,\n    \"testString\": \"test string109\",\n    \"testDate\": \"2022-05-12T22:59:22.943+0000\",\n    \"testDecimal\": 749.0437210070622,\n    \"testNumber\": 0,\n    \"testCycle\": {}\n  },\n  \"list\": {},\n  \"stringList\": [\n    \"测试字符串list42\",\n    \"测试字符串list102\"\n  ],\n  \"set\": {},\n  \"stringSet\": [\n    \"测试字符串set68\",\n    \"测试字符串set112\"\n  ],\n  \"map\": {},\n  \"objMap\": {\n    \"key1\": {},\n    \"key2\": {}\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|└─ testInt     | **int**    |  test int |   |\r\n|└─ testLong     | **long**    |  test long |   |\r\n|└─ testFloat     | **float**    |  test float |   |\r\n|└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|└─ testString     | **String**    |  test string |   |\r\n|└─ testDate     | **Date**    |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|└─ testNumber     | **Number**    |  test number |   |\r\n|└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n| list     | **List**    |  测试普通list |   |\r\n| stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n| set     | **Set**    |  测试普通set |   |\r\n| stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n| map     | **Map**    |  测试普通Map |   |\r\n| objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2596,7 +2596,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": {\n    \"testCustomClass\": {\n      \"testInt\": 21,\n      \"testLong\": 923,\n      \"testFloat\": 26.635656,\n      \"testBoolean\": false,\n      \"testString\": \"test string3\",\n      \"testDate\": \"2022-05-13T05:42:22.237+0000\",\n      \"testDecimal\": 912.6608104041817,\n      \"testNumber\": 0,\n      \"testCycle\": {}\n    },\n    \"list\": {},\n    \"stringList\": [\n      \"测试字符串list116\",\n      \"测试字符串list108\"\n    ],\n    \"set\": {},\n    \"stringSet\": [\n      \"测试字符串set114\",\n      \"测试字符串set85\"\n    ],\n    \"map\": {},\n    \"objMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}"
+                  "body": "{\n  \"root\": {\n    \"testCustomClass\": {\n      \"testInt\": 5,\n      \"testLong\": 203,\n      \"testFloat\": 53.434444,\n      \"testBoolean\": false,\n      \"testString\": \"test string65\",\n      \"testDate\": \"2022-05-12T19:10:04.536+0000\",\n      \"testDecimal\": 767.5124992261352,\n      \"testNumber\": 0,\n      \"testCycle\": {}\n    },\n    \"list\": {},\n    \"stringList\": [\n      \"测试字符串list23\",\n      \"测试字符串list126\"\n    ],\n    \"set\": {},\n    \"stringSet\": [\n      \"测试字符串set105\",\n      \"测试字符串set88\"\n    ],\n    \"map\": {},\n    \"objMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}"
                 }
               ]
             },
@@ -2619,7 +2619,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(带泛型的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"data\": {\n    \"testInt\": 67,\n    \"testLong\": 620,\n    \"testFloat\": 61.677628,\n    \"testBoolean\": false,\n    \"testString\": \"test string43\",\n    \"testDate\": \"2022-05-13T06:03:19.967+0000\",\n    \"testDecimal\": 969.3586838094052,\n    \"testNumber\": 0,\n    \"testCycle\": {\n      \"testCustomClass\": {},\n      \"list\": {},\n      \"stringList\": [\n        \"测试字符串list15\",\n        \"测试字符串list22\"\n      ],\n      \"set\": {},\n      \"stringSet\": [\n        \"测试字符串set110\",\n        \"测试字符串set105\"\n      ],\n      \"map\": {},\n      \"objMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  },\n  \"dataList\": [\n    {},\n    {}\n  ],\n  \"dataSet\": [\n    {},\n    {}\n  ],\n  \"dataCollection\": [\n    {},\n    {}\n  ],\n  \"genericMap\": {\n    \"key1\": {},\n    \"key2\": {}\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| data     | **TestBasePojo**    |  测试泛型 |   |\r\n|└─ testInt     | **int**    |  test int |   |\r\n|└─ testLong     | **long**    |  test long |   |\r\n|└─ testFloat     | **float**    |  test float |   |\r\n|└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|└─ testString     | **String**    |  test string |   |\r\n|└─ testDate     | **Date**    |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|└─ testNumber     | **Number**    |  test number |   |\r\n|└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**    |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**    |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**    |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n| dataList     | **List\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合List |   |\r\n| dataSet     | **Set\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Set |   |\r\n| dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Collection |   |\r\n| genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**    |  测试带泛型Map |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(带泛型的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n{\n  \"data\": {\n    \"testInt\": 6,\n    \"testLong\": 176,\n    \"testFloat\": 78.75577,\n    \"testBoolean\": true,\n    \"testString\": \"test string40\",\n    \"testDate\": \"2022-05-12T23:11:14.151+0000\",\n    \"testDecimal\": 525.6508123679243,\n    \"testNumber\": 0,\n    \"testCycle\": {\n      \"testCustomClass\": {},\n      \"list\": {},\n      \"stringList\": [\n        \"测试字符串list64\",\n        \"测试字符串list111\"\n      ],\n      \"set\": {},\n      \"stringSet\": [\n        \"测试字符串set63\",\n        \"测试字符串set36\"\n      ],\n      \"map\": {},\n      \"objMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  },\n  \"dataList\": [\n    {},\n    {}\n  ],\n  \"dataSet\": [\n    {},\n    {}\n  ],\n  \"dataCollection\": [\n    {},\n    {}\n  ],\n  \"genericMap\": {\n    \"key1\": {},\n    \"key2\": {}\n  }\n}\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n| data     | **TestBasePojo**    |  测试泛型 |   |\r\n|└─ testInt     | **int**    |  test int |   |\r\n|└─ testLong     | **long**    |  test long |   |\r\n|└─ testFloat     | **float**    |  test float |   |\r\n|└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|└─ testString     | **String**    |  test string |   |\r\n|└─ testDate     | **Date**    |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|└─ testNumber     | **Number**    |  test number |   |\r\n|└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**    |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**    |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**    |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n| dataList     | **List\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合List |   |\r\n| dataSet     | **Set\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Set |   |\r\n| dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Collection |   |\r\n| genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**    |  测试带泛型Map |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2647,7 +2647,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": {\n    \"data\": {\n      \"testInt\": 66,\n      \"testLong\": 145,\n      \"testFloat\": 97.53566,\n      \"testBoolean\": false,\n      \"testString\": \"test string86\",\n      \"testDate\": \"2022-05-13T06:24:51.966+0000\",\n      \"testDecimal\": 731.5279609167497,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list41\",\n          \"测试字符串list80\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set123\",\n          \"测试字符串set14\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}"
+                  "body": "{\n  \"root\": {\n    \"data\": {\n      \"testInt\": 41,\n      \"testLong\": 137,\n      \"testFloat\": 89.17529,\n      \"testBoolean\": true,\n      \"testString\": \"test string55\",\n      \"testDate\": \"2022-05-13T04:59:27.114+0000\",\n      \"testDecimal\": 290.15151223616715,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list108\",\n          \"测试字符串list34\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set109\",\n          \"测试字符串set66\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n}"
                 }
               ]
             },
@@ -2668,7 +2668,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个响应(集合类型+泛型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionAndGenericPojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n[\n  {\n    \"data\": {\n      \"testInt\": 114,\n      \"testLong\": 612,\n      \"testFloat\": 97.78332,\n      \"testBoolean\": true,\n      \"testString\": \"test string18\",\n      \"testDate\": \"2022-05-12T09:11:55.261+0000\",\n      \"testDecimal\": 291.4755278900991,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list97\",\n          \"测试字符串list36\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set63\",\n          \"测试字符串set4\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  },\n  {\n    \"data\": {\n      \"testInt\": 114,\n      \"testLong\": 612,\n      \"testFloat\": 97.78332,\n      \"testBoolean\": true,\n      \"testString\": \"test string18\",\n      \"testDate\": \"2022-05-12T09:11:55.261+0000\",\n      \"testDecimal\": 291.4755278900991,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list97\",\n          \"测试字符串list36\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set63\",\n          \"测试字符串set4\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n]\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n|└─ data     | **TestBasePojo**    |  测试泛型 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testInt     | **int**    |  test int |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testLong     | **long**    |  test long |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testFloat     | **float**    |  test float |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testString     | **String**    |  test string |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testDate     | **Date**    |  test date |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testNumber     | **Number**    |  test number |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**    |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**    |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**    |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n|└─ dataList     | **List\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合List |   |\r\n|└─ dataSet     | **Set\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Set |   |\r\n|└─ dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Collection |   |\r\n|└─ genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**    |  测试带泛型Map |   |\r\n\r\n\r\n"
+                "description": "# 测试单个响应(集合类型+泛型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://172.24.144.1:7086/api/v1/test/param/testSingleCollectionAndGenericPojoReturn\r\n```\r\n\r\n### 请求方法\r\n```\r\nGET/POST/PUT/DELETE\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n\u003e 此接口无任何入参\r\n\r\n\r\n\r\n## 出参\r\n### 出参示例\r\n```json\r\n[\n  {\n    \"data\": {\n      \"testInt\": 37,\n      \"testLong\": 118,\n      \"testFloat\": 17.62817,\n      \"testBoolean\": false,\n      \"testString\": \"test string105\",\n      \"testDate\": \"2022-05-12T10:51:14.075+0000\",\n      \"testDecimal\": 79.65276215959885,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list2\",\n          \"测试字符串list13\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set78\",\n          \"测试字符串set14\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  },\n  {\n    \"data\": {\n      \"testInt\": 37,\n      \"testLong\": 118,\n      \"testFloat\": 17.62817,\n      \"testBoolean\": false,\n      \"testString\": \"test string105\",\n      \"testDate\": \"2022-05-12T10:51:14.075+0000\",\n      \"testDecimal\": 79.65276215959885,\n      \"testNumber\": 0,\n      \"testCycle\": {\n        \"testCustomClass\": {},\n        \"list\": {},\n        \"stringList\": [\n          \"测试字符串list2\",\n          \"测试字符串list13\"\n        ],\n        \"set\": {},\n        \"stringSet\": [\n          \"测试字符串set78\",\n          \"测试字符串set14\"\n        ],\n        \"map\": {},\n        \"objMap\": {\n          \"key1\": {},\n          \"key2\": {}\n        }\n      }\n    },\n    \"dataList\": [\n      {},\n      {}\n    ],\n    \"dataSet\": [\n      {},\n      {}\n    ],\n    \"dataCollection\": [\n      {},\n      {}\n    ],\n    \"genericMap\": {\n      \"key1\": {},\n      \"key2\": {}\n    }\n  }\n]\r\n```\r\n\r\n\r\n### 出参字段说明\r\n\r\n| **字段** | **类型**  | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- |\r\n|└─ data     | **TestBasePojo**    |  测试泛型 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testInt     | **int**    |  test int |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testLong     | **long**    |  test long |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testFloat     | **float**    |  test float |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testBoolean     | **boolean**    |  test boolean |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testString     | **String**    |  test string |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testDate     | **Date**    |  test date |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testDecimal     | **BigDecimal**    |  test decimal |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testNumber     | **Number**    |  test number |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCycle     | **TestPojo**    |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**    |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**    |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**    |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**    |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**    |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**    |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**    |  测试对象Map |   |\r\n|└─ dataList     | **List\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合List |   |\r\n|└─ dataSet     | **Set\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Set |   |\r\n|└─ dataCollection     | **Collection\\\u003cTestBasePojo\\\u003e**    |  测试泛型集合Collection |   |\r\n|└─ genericMap     | **Map\\\u003cString, TestBasePojo\\\u003e**    |  测试带泛型Map |   |\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2694,7 +2694,7 @@
                   "_postman_previewlanguage": "json",
                   "header": [],
                   "cookie": [],
-                  "body": "{\n  \"root\": [\n    {\n      \"data\": {\n        \"testInt\": 53,\n        \"testLong\": 960,\n        \"testFloat\": 94.67417,\n        \"testBoolean\": false,\n        \"testString\": \"test string38\",\n        \"testDate\": \"2022-05-12T20:49:43.382+0000\",\n        \"testDecimal\": 574.2901909025263,\n        \"testNumber\": 0,\n        \"testCycle\": {\n          \"testCustomClass\": {},\n          \"list\": {},\n          \"stringList\": [\n            \"测试字符串list116\",\n            \"测试字符串list102\"\n          ],\n          \"set\": {},\n          \"stringSet\": [\n            \"测试字符串set64\",\n            \"测试字符串set29\"\n          ],\n          \"map\": {},\n          \"objMap\": {\n            \"key1\": {},\n            \"key2\": {}\n          }\n        }\n      },\n      \"dataList\": [\n        {},\n        {}\n      ],\n      \"dataSet\": [\n        {},\n        {}\n      ],\n      \"dataCollection\": [\n        {},\n        {}\n      ],\n      \"genericMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    },\n    {\n      \"data\": {\n        \"testInt\": 53,\n        \"testLong\": 960,\n        \"testFloat\": 94.67417,\n        \"testBoolean\": false,\n        \"testString\": \"test string38\",\n        \"testDate\": \"2022-05-12T20:49:43.382+0000\",\n        \"testDecimal\": 574.2901909025263,\n        \"testNumber\": 0,\n        \"testCycle\": {\n          \"testCustomClass\": {},\n          \"list\": {},\n          \"stringList\": [\n            \"测试字符串list116\",\n            \"测试字符串list102\"\n          ],\n          \"set\": {},\n          \"stringSet\": [\n            \"测试字符串set64\",\n            \"测试字符串set29\"\n          ],\n          \"map\": {},\n          \"objMap\": {\n            \"key1\": {},\n            \"key2\": {}\n          }\n        }\n      },\n      \"dataList\": [\n        {},\n        {}\n      ],\n      \"dataSet\": [\n        {},\n        {}\n      ],\n      \"dataCollection\": [\n        {},\n        {}\n      ],\n      \"genericMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  ]\n}"
+                  "body": "{\n  \"root\": [\n    {\n      \"data\": {\n        \"testInt\": 65,\n        \"testLong\": 101,\n        \"testFloat\": 63.69085,\n        \"testBoolean\": false,\n        \"testString\": \"test string69\",\n        \"testDate\": \"2022-05-13T02:12:03.107+0000\",\n        \"testDecimal\": 95.13749816074821,\n        \"testNumber\": 0,\n        \"testCycle\": {\n          \"testCustomClass\": {},\n          \"list\": {},\n          \"stringList\": [\n            \"测试字符串list72\",\n            \"测试字符串list127\"\n          ],\n          \"set\": {},\n          \"stringSet\": [\n            \"测试字符串set12\",\n            \"测试字符串set67\"\n          ],\n          \"map\": {},\n          \"objMap\": {\n            \"key1\": {},\n            \"key2\": {}\n          }\n        }\n      },\n      \"dataList\": [\n        {},\n        {}\n      ],\n      \"dataSet\": [\n        {},\n        {}\n      ],\n      \"dataCollection\": [\n        {},\n        {}\n      ],\n      \"genericMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    },\n    {\n      \"data\": {\n        \"testInt\": 65,\n        \"testLong\": 101,\n        \"testFloat\": 63.69085,\n        \"testBoolean\": false,\n        \"testString\": \"test string69\",\n        \"testDate\": \"2022-05-13T02:12:03.107+0000\",\n        \"testDecimal\": 95.13749816074821,\n        \"testNumber\": 0,\n        \"testCycle\": {\n          \"testCustomClass\": {},\n          \"list\": {},\n          \"stringList\": [\n            \"测试字符串list72\",\n            \"测试字符串list127\"\n          ],\n          \"set\": {},\n          \"stringSet\": [\n            \"测试字符串set12\",\n            \"测试字符串set67\"\n          ],\n          \"map\": {},\n          \"objMap\": {\n            \"key1\": {},\n            \"key2\": {}\n          }\n        }\n      },\n      \"dataList\": [\n        {},\n        {}\n      ],\n      \"dataSet\": [\n        {},\n        {}\n      ],\n      \"dataCollection\": [\n        {},\n        {}\n      ],\n      \"genericMap\": {\n        \"key1\": {},\n        \"key2\": {}\n      }\n    }\n  ]\n}"
                 }
               ]
             }
