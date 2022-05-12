@@ -13,7 +13,7 @@
 - [下单接口.md](https://github.com/docer-savior/docer-savior-plugin-usage-examples/blob/master/doc-example/restful/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97/%E4%B8%8B%E5%8D%95%E6%8E%A5%E5%8F%A3.md)
 - [订单接口.md](https://github.com/docer-savior/docer-savior-plugin-usage-examples/blob/master/doc-example/restful/%E8%AE%A2%E5%8D%95%E6%A8%A1%E5%9D%97/%E8%AE%A2%E5%8D%95%E6%8E%A5%E5%8F%A3.md)
 
-其中用户接口对应Java代码如下  
+其中用户接口对应部分Java代码如下  
 [View on Github - UserController.java](https://github.com/docer-savior/docer-savior-plugin-usage-examples/blob/master/src/main/java/cn/gudqs/example/docer/restful/user/controller/UserController.java)
 ```java
 package cn.gudqs.example.docer.restful.user.controller;
@@ -71,32 +71,6 @@ public class UserController {
      */
     @PostMapping("/createUser")
     public BaseResponse<Boolean> createUser(CreateUserRequest createUserRequest) {
-        return BaseResponse.success();
-    }
-
-    /**
-     * 更新一个用户
-     *
-     * @param updateUserRequest 用户信息
-     * @return 操作是否成功
-     * #hiddenResponse totalCount
-     * #code 10002 用户年龄范围无效 用户年龄需在0~200之间的数字
-     */
-    @PostMapping("/updateUser")
-    public BaseResponse<Boolean> updateUser(UpdateUserRequest updateUserRequest) {
-        return BaseResponse.success();
-    }
-
-    /**
-     * 删除一个用户
-     *
-     * @param userId 用户ID required example=1
-     * @return 操作是否成功
-     * #hiddenResponse totalCount
-     * #code 10003 用户信息不存在
-     */
-    @PostMapping("/deleteUser")
-    public BaseResponse<Boolean> deleteUser(Long userId) {
         return BaseResponse.success();
     }
 
