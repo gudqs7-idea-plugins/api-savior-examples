@@ -5,6 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+import java.util.Date;
+
 /**
  * 八大基本类型(带包装)
  * @author wenquan
@@ -49,5 +52,25 @@ public class TestBaseType {
     private Character testCharWithBoxWithBox;
 
     private Boolean testBooleanWithBoxWithBox;
+
+    /**
+     * test string
+     */
+    private String testString;
+
+    /**
+     * test date
+     */
+    private Date testDate;
+
+    /**
+     * test decimal
+     */
+    private BigDecimal testDecimal;
+
+    /**
+     * test number
+     */
+    private Number testNumber;
 
 }
