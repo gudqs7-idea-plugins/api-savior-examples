@@ -1,0 +1,1463 @@
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>测试模块-测试接口(测参数)</title>
+    <style type="text/css">
+
+        :root {
+            --monospace: "Lucida Console", Consolas, "Courier", monospace;
+        }
+
+        #markdown {
+            font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header
+        -------------------- */
+
+        #markdown h1, #markdown h2, #markdown h3 {
+            cursor: default;
+        }
+
+        #markdown h1 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        #markdown h2 {
+            margin: 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #markdown h3 {
+            position: relative;
+            margin: 10px 0;
+        }
+
+
+        #markdown h4 {
+            margin: 10px 0;
+        }
+
+        /* Text Formating
+        -------------------- */
+
+        #markdown p {
+            margin: 12px 0;
+        }
+
+        #markdown code {
+            margin: 0 2px;
+            padding: 3px 5px;
+            border-radius: 2px;
+            color: rgb(236, 90, 22);
+            background-color: #eee;
+            font-family: var(--monospace);
+        }
+
+        /* Horizontal Rule
+        -------------------- */
+
+        #markdown hr {
+            height: 2px;
+            margin: 16px 0;
+            border: none;
+            background-color: #ccc;
+        }
+
+        /* Cites
+        -------------------- */
+
+        #markdown blockquote {
+            border-left: 4px solid #0eaeec;
+            padding: 10px 15px;
+            color: #666;
+            background-color: #dbf3fd;
+        }
+
+        /* Table
+        -------------------- */
+
+        #markdown table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        #markdown table th, #markdown table td {
+            padding: 6px 12px;
+            border: 1px solid #dfe2e5;
+        }
+
+        #markdown table tr {
+            background-color: #fff;
+        }
+
+        #markdown table thead tr, #markdown table tbody tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        /* Code Block
+        -------------------- */
+
+        #markdown pre code {
+            display: block;
+            padding: 16px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            color: #525252;
+            font-size: 14px;
+            line-height: 22px;
+            white-space: pre;
+            overflow-x: auto;
+            font-family: var(--monospace);
+        }
+
+        /* List
+        -------------------- */
+
+        #markdown ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        #markdown ul li {
+            margin: 8px 0;
+        }
+
+        #markdown ul ul {
+            list-style-type: circle;
+        }
+
+        #markdown ul ul ul {
+            list-style-type: square;
+        }
+
+        /* Link
+        -------------------- */
+
+        #markdown a {
+            color: #0eaeec;
+            font-weight: bold;
+        }
+
+        /* Image
+        -------------------- */
+
+        #markdown img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 16px auto;
+        }
+    </style>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/solarized-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+<article id='markdown'>
+  <h1 id='测试无参数'>测试无参数</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testNoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<blockquote>
+<p >此接口无任何入参</p>
+</blockquote>
+
+
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(基本类型)'>测试单个参数(基本类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleBaseParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">userId:30
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userId<br/></td>
+<td ><strong>int</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >用户id</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(集合类型)'>测试单个参数(集合类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleCollectionParam?userIdList[0]=用户ID列表22&userIdList[1]=用户ID列表123</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">GET/POST/PUT/DELETE</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//userIdList[0]:用户ID列表22
+//userIdList[1]:用户ID列表123
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userIdList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >用户ID列表</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(基本类型组成的Pojo)'>测试单个参数(基本类型组成的Pojo)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//testInt:104
+//testLong:896
+//testFloat:88.77404
+//testBoolean:true
+//testString:test string92
+//testDate:2022-05-12T22:13:29.069+0000
+//testDecimal:188.15818861086782
+//testNumber:0
+//testCycle.testCustomClass:{}
+//testCycle.list:{}
+//testCycle.stringList[0]:测试字符串list83
+//testCycle.stringList[1]:测试字符串list100
+//testCycle.set:{}
+//testCycle.stringSet[0]:测试字符串set119
+//testCycle.stringSet[1]:测试字符串set101
+//testCycle.map:{}
+//testCycle.objMap.key1:{}
+//testCycle.objMap.key2:{}
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >否<br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >否<br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >否<br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >否<br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(普通Pojo)'>测试单个参数(普通Pojo)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSinglePojoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//testCustomClass.testInt:55
+//testCustomClass.testLong:509
+//testCustomClass.testFloat:53.491264
+//testCustomClass.testBoolean:true
+//testCustomClass.testString:test string96
+//testCustomClass.testDate:2022-05-12T20:01:35.219+0000
+//testCustomClass.testDecimal:236.63810904815156
+//testCustomClass.testNumber:0
+//testCustomClass.testCycle:{}
+//list:{}
+//stringList[0]:测试字符串list100
+//stringList[1]:测试字符串list72
+//set:{}
+//stringSet[0]:测试字符串set59
+//stringSet[1]:测试字符串set52
+//map:{}
+//objMap.key1:{}
+//objMap.key2:{}
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >否<br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >否<br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >否<br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >否<br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(带泛型的Pojo)'>测试单个参数(带泛型的Pojo)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//data.testInt:119
+//data.testLong:187
+//data.testFloat:24.06235
+//data.testBoolean:true
+//data.testString:test string115
+//data.testDate:2022-05-13T05:03:57.282+0000
+//data.testDecimal:521.6859214620368
+//data.testNumber:0
+//data.testCycle.testCustomClass:{}
+//data.testCycle.list:{}
+//data.testCycle.stringList[0]:测试字符串list7
+//data.testCycle.stringList[1]:测试字符串list34
+//data.testCycle.set:{}
+//data.testCycle.stringSet[0]:测试字符串set119
+//data.testCycle.stringSet[1]:测试字符串set64
+//data.testCycle.map:{}
+//data.testCycle.objMap.key1:{}
+//data.testCycle.objMap.key2:{}
+//dataList[0]:{}
+//dataList[1]:{}
+//dataSet[0]:{}
+//dataSet[1]:{}
+//dataCollection[0]:{}
+//dataCollection[1]:{}
+//genericMap.key1:{}
+//genericMap.key2:{}
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >data<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >否<br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >否<br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >否<br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >否<br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >dataList<br/></td>
+<td ><strong>List&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合List</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >dataSet<br/></td>
+<td ><strong>Set&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合Set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >dataCollection<br/></td>
+<td ><strong>Collection&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合Collection</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >genericMap<br/></td>
+<td ><strong>Map&lt;String, TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试带泛型Map</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(文件类型)'>测试单个参数(文件类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleFileParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">form-data</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//file:@"/C:/Users/wq/Desktop/test.zip"
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >file<br/></td>
+<td ><strong>MultipartFile</strong><br/></td>
+<td >否<br/></td>
+<td >文件</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试多参数(基本类型)'>测试多参数(基本类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiBaseParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">userId:19
+//userAge:52
+//amount:48.094536
+//userName:gudqs7
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userId<br/></td>
+<td ><strong>long</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >用户ID</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >userAge<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >用户年龄</td>
+<td >不能为负数<br/></td>
+</tr>
+<tr>
+<td >amount<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >用户金额</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >userName<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >用户姓名</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试多参数(集合类型)'>测试多参数(集合类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiCollectionParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//userIdList[0]:142
+//userIdList[1]:319
+//userAgeList[0]:15
+//userAgeList[1]:93
+//userNameList[0]:用户姓名列表113
+//userNameList[1]:用户姓名列表41
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >userIdList<br/></td>
+<td ><strong>List&lt;Long&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >用户ID列表</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >userAgeList<br/></td>
+<td ><strong>List&lt;Integer&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >用户年龄列表</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >userNameList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >用户姓名列表</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试多参数(Pojo)'>测试多参数(Pojo)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiPojoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//testInt:103
+//testLong:195
+//testFloat:30.02068
+//testBoolean:true
+//testString:test string62
+//testDate:2022-05-13T06:17:43.661+0000
+//testDecimal:157.5600739173803
+//testNumber:0
+//testCycle.testCustomClass:{}
+//testCycle.list:{}
+//testCycle.stringList[0]:测试字符串list125
+//testCycle.stringList[1]:测试字符串list121
+//testCycle.set:{}
+//testCycle.stringSet[0]:测试字符串set23
+//testCycle.stringSet[1]:测试字符串set71
+//testCycle.map:{}
+//testCycle.objMap.key1:{}
+//testCycle.objMap.key2:{}
+//testPojo:{}
+//data:{}
+//dataList[0]:{}
+//dataList[1]:{}
+//dataSet[0]:{}
+//dataSet[1]:{}
+//dataCollection[0]:{}
+//dataCollection[1]:{}
+//genericMap.key1:{}
+//genericMap.key2:{}
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >testBasePojo<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >否<br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >否<br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >否<br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >否<br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testPojo<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testGenericPojo<br/></td>
+<td ><strong>TestGenericPojo&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >泛型pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ data<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ dataList<br/></td>
+<td ><strong>List&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合List</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ dataSet<br/></td>
+<td ><strong>Set&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合Set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ dataCollection<br/></td>
+<td ><strong>Collection&lt;TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试泛型集合Collection</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ genericMap<br/></td>
+<td ><strong>Map&lt;String, TestBasePojo&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试带泛型Map</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试多个参数(文件类型)'>测试多个参数(文件类型)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiFileParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">form-data</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">file:@"/D:/wq-develop/code/docer-savior-plugin-usage-examples/a.txt"
+//file2:@"/C:/Users/wq/Downloads/a.txt"
+//testInt:10
+//testLong:474
+//testFloat:20.286009
+//testBoolean:true
+//testString:test string97
+//testDate:2022-05-13T05:15:51.267+0000
+//testDecimal:585.0979357306699
+//testNumber:0
+//testCycle.testCustomClass:{}
+//testCycle.list:{}
+//testCycle.stringList[0]:测试字符串list105
+//testCycle.stringList[1]:测试字符串list120
+//testCycle.set:{}
+//testCycle.stringSet[0]:测试字符串set111
+//testCycle.stringSet[1]:测试字符串set27
+//testCycle.map:{}
+//testCycle.objMap.key1:{}
+//testCycle.objMap.key2:{}
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >file<br/></td>
+<td ><strong>MultipartFile</strong><br/></td>
+<td ><strong>是</strong><br/></td>
+<td >文件1</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >file2<br/></td>
+<td ><strong>MultipartFile</strong><br/></td>
+<td >否<br/></td>
+<td >文件2</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testBasePojo<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >否<br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >否<br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >否<br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >否<br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >否<br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >否<br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >否<br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >否<br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >否<br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+
+</article>
+</body>
+</html>
