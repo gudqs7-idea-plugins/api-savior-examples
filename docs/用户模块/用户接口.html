@@ -168,7 +168,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/user/queryUsers</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/user/queryUsers</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -183,10 +183,10 @@
 <h3 >入参示例 (Postman Bulk Edit)</h3>
 <pre><code class="language-json">pageNumber:1
 pageSize:20
-//searchKeyword:模糊搜索词19
+//searchKeyword:模糊搜索词
 //gender:2
-//ageStart:67
-//ageEnd:127
+//ageStart:1
+//ageEnd:1
 //registerTimeStart:2022-05-09
 //registerTimeEnd:2022-05-09
 </code></pre>
@@ -266,12 +266,12 @@ pageSize:20
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息9",
+  "message": "错误信息",
   "data": [
     {
-      "userId": 702,
-      "userNickName": "用户昵称68",
-      "userRealName": "用户姓名114",
+      "userId": 10,
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -279,9 +279,9 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     },
     {
-      "userId": 702,
-      "userNickName": "用户昵称68",
-      "userRealName": "用户姓名114",
+      "userId": 10,
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -289,7 +289,7 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     }
   ],
-  "totalCount": 554
+  "totalCount": 10
 }</code></pre>
 
 <p ></p>
@@ -389,7 +389,7 @@ pageSize:20
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/user/createUser</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/user/createUser</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -402,13 +402,13 @@ pageSize:20
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">userNickName:用户昵称49
-userRealName:用户姓名89
+<pre><code class="language-json">userNickName:用户昵称
+userRealName:用户姓名
 userGender:2
 //userAge:18
-//userPhone:联系方式-手机号115
-//userEmail:联系方式-电子邮箱121
-//userAvatar:用户头像 url 地址60
+//userPhone:联系方式-手机号
+//userEmail:联系方式-电子邮箱
+//userAvatar:用户头像 url 地址
 </code></pre>
 
 <p ></p>
@@ -479,7 +479,7 @@ userGender:2
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息98",
+  "message": "错误信息",
   "data": false
 }</code></pre>
 
@@ -548,7 +548,7 @@ userGender:2
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/user/updateUser</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/user/updateUser</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -561,13 +561,13 @@ userGender:2
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">userId:162
-userRealName:用户姓名103
+<pre><code class="language-json">userId:10
+userRealName:用户姓名
 userGender:2
 //userAge:18
-//userPhone:联系方式-手机号101
-//userEmail:联系方式-电子邮箱56
-//userAvatar:用户头像 url 地址114
+//userPhone:联系方式-手机号
+//userEmail:联系方式-电子邮箱
+//userAvatar:用户头像 url 地址
 </code></pre>
 
 <p ></p>
@@ -638,8 +638,8 @@ userGender:2
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息102",
-  "data": true
+  "message": "错误信息",
+  "data": false
 }</code></pre>
 
 <p ></p>
@@ -702,7 +702,7 @@ userGender:2
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/user/deleteUser</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/user/deleteUser</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -744,8 +744,8 @@ userGender:2
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息115",
-  "data": true
+  "message": "错误信息",
+  "data": false
 }</code></pre>
 
 <p ></p>

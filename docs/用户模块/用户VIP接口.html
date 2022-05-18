@@ -168,7 +168,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/queryVipUsers</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/vip/queryVipUsers</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -183,13 +183,13 @@
 <h3 >入参示例 (Postman Bulk Edit)</h3>
 <pre><code class="language-json">pageNumber:1
 pageSize:20
-//searchKeyword:模糊搜索词23
+//searchKeyword:模糊搜索词
 //gender:2
 //vipType:3
 //firstOpenTimeStart:2022-05-09
 //firstOpenTimeEnd:2022-05-09
 //vipExpireTimeStart:2022-05-09
-//vipExpireTimeEnd:2022-05-09
+//vipExpireTimeEnd:2012-05-28
 </code></pre>
 
 <p ></p>
@@ -247,14 +247,14 @@ pageSize:20
 </tr>
 <tr>
 <td >firstOpenTimeEnd<br/></td>
-<td ><strong>Date</strong><br/></td>
+<td ><strong>String</strong><br/></td>
 <td >否<br/></td>
 <td >VIP开通时间范围-结束<br>格式: 2022-05-09</td>
 <td ><br/></td>
 </tr>
 <tr>
 <td >vipExpireTimeStart<br/></td>
-<td ><strong>String</strong><br/></td>
+<td ><strong>Date</strong><br/></td>
 <td >否<br/></td>
 <td >VIP过期时间范围-开始<br>格式: 2022-05-09</td>
 <td ><br/></td>
@@ -274,15 +274,15 @@ pageSize:20
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息50",
+  "message": "错误信息",
   "data": [
     {
-      "userId": 24,
+      "userId": 10,
       "vipType": 3,
-      "vipExpireTime": "2022-05-13T02:50:04.407+0000",
-      "vipFirstOpenTime": "2022-05-13T02:56:54.284+0000",
-      "userNickName": "用户昵称107",
-      "userRealName": "用户姓名9",
+      "vipExpireTime": "2012-05-28T13:14:00.520+0000",
+      "vipFirstOpenTime": "2012-05-28T13:14:00.520+0000",
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -290,12 +290,12 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     },
     {
-      "userId": 24,
+      "userId": 10,
       "vipType": 3,
-      "vipExpireTime": "2022-05-13T02:50:04.407+0000",
-      "vipFirstOpenTime": "2022-05-13T02:56:54.284+0000",
-      "userNickName": "用户昵称107",
-      "userRealName": "用户姓名9",
+      "vipExpireTime": "2012-05-28T13:14:00.520+0000",
+      "vipFirstOpenTime": "2012-05-28T13:14:00.520+0000",
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -303,7 +303,7 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     }
   ],
-  "totalCount": 187
+  "totalCount": 10
 }</code></pre>
 
 <p ></p>
@@ -421,7 +421,7 @@ pageSize:20
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/openVip</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/vip/openVip</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -479,7 +479,7 @@ openingTime:1
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息71",
+  "message": "错误信息",
   "data": false
 }</code></pre>
 
@@ -553,7 +553,7 @@ openingTime:1
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/vip/renewVip</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/vip/renewVip</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -603,8 +603,8 @@ openingTime:1
 <pre><code class="language-json">{
   "success": true,
   "code": 200,
-  "message": "错误信息102",
-  "data": true
+  "message": "错误信息",
+  "data": false
 }</code></pre>
 
 <p ></p>

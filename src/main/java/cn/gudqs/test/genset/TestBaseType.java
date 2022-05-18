@@ -4,8 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigDecimal;
+import java.sql.*;
 import java.util.Date;
 
 /**
@@ -72,5 +74,40 @@ public class TestBaseType {
      * test number
      */
     private Number testNumber;
+
+    /**
+     * test sql time
+     */
+    private Time testTime;
+
+    /**
+     * test sql timestamp
+     */
+    private Timestamp testTimestamp;
+
+    /**
+     * test sql date
+     */
+    private java.sql.Date testSqlDate;
+
+    /**
+     * test blob
+     */
+    private Blob blob;
+
+    /**
+     * test clob
+     */
+    private Clob clob;
+
+    /**
+     * test nclob
+     */
+    private NClob nClob;
+
+    /**
+     * test multipart file
+     */
+    private MultipartFile file;
 
 }

@@ -3,6 +3,7 @@ package cn.gudqs.example.docer.restful.user.dto.request;
 import cn.gudqs.example.docer.base.BasePageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -50,20 +51,20 @@ public class QueryVipUserRequest extends BasePageRequest {
      * 格式: 2022-05-09
      * #example 2022-05-09
      */
-    private Date firstOpenTimeEnd;
+    private String firstOpenTimeEnd;
 
     /**
      * VIP过期时间范围-开始
      * 格式: 2022-05-09
      * #example 2022-05-09
      */
-    private String vipExpireTimeStart;
+    private Date vipExpireTimeStart;
 
     /**
      * VIP过期时间范围-结束
      * 格式: 2022-05-09
-     * #example 2022-05-09
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date vipExpireTimeEnd;
 
 }

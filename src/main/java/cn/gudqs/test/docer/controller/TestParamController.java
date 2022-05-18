@@ -3,6 +3,7 @@ package cn.gudqs.test.docer.controller;
 import cn.gudqs.test.docer.dto.TestBasePojo;
 import cn.gudqs.test.docer.dto.TestGenericPojo;
 import cn.gudqs.test.docer.dto.TestPojo;
+import cn.gudqs.test.docer.dto.TestSqlTypePojo;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -54,6 +55,16 @@ public class TestParamController {
      */
     @PostMapping("/testSingleBasePojoParam")
     public void testSingleBasePojoParam(TestBasePojo testBasePojo) {
+
+    }
+
+    /**
+     * 测试单个参数(sql类型组成的Pojo)
+     *
+     * @param testSqlTypePojo sql类型组成的Pojo
+     */
+    @PostMapping("/testSingleSqlTypePojoParam")
+    public void testSingleSqlTypePojoParam(TestSqlTypePojo testSqlTypePojo) {
 
     }
 

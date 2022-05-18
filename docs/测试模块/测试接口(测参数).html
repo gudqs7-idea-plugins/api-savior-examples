@@ -168,7 +168,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testNoParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testNoParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -196,7 +196,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleBaseParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleBaseParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -244,7 +244,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleCollectionParam?userIdList[0]=用户ID列表22&userIdList[1]=用户ID列表123</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleCollectionParam?userIdList[0]=用户ID列表&userIdList[1]=用户ID列表</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -257,8 +257,8 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//userIdList[0]:用户ID列表22
-//userIdList[1]:用户ID列表123
+<pre><code class="language-json">//userIdList[0]:用户ID列表
+//userIdList[1]:用户ID列表
 </code></pre>
 
 <p ></p>
@@ -293,7 +293,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleBasePojoParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleBasePojoParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -306,21 +306,21 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//testInt:104
-//testLong:896
-//testFloat:88.77404
-//testBoolean:true
-//testString:test string92
-//testDate:2022-05-12T22:13:29.069+0000
-//testDecimal:188.15818861086782
+<pre><code class="language-json">//testInt:1
+//testLong:10
+//testFloat:10.0
+//testBoolean:false
+//testString:test string
+//testDate:2012-05-28T13:14:00.520+0000
+//testDecimal:50.0
 //testNumber:0
 //testCycle.testCustomClass:{}
 //testCycle.list:{}
-//testCycle.stringList[0]:测试字符串list83
-//testCycle.stringList[1]:测试字符串list100
+//testCycle.stringList[0]:测试字符串list
+//testCycle.stringList[1]:测试字符串list
 //testCycle.set:{}
-//testCycle.stringSet[0]:测试字符串set119
-//testCycle.stringSet[1]:测试字符串set101
+//testCycle.stringSet[0]:测试字符串set
+//testCycle.stringSet[1]:测试字符串set
 //testCycle.map:{}
 //testCycle.objMap.key1:{}
 //testCycle.objMap.key2:{}
@@ -458,12 +458,12 @@
 </blockquote>
 
 
-<h1 id='测试单个参数(普通Pojo)'>测试单个参数(普通Pojo)</h1>
+<h1 id='测试单个参数(sql类型组成的Pojo)'>测试单个参数(sql类型组成的Pojo)</h1>
 <p ></p>
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSinglePojoParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleSqlTypePojoParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -476,21 +476,117 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//testCustomClass.testInt:55
-//testCustomClass.testLong:509
-//testCustomClass.testFloat:53.491264
-//testCustomClass.testBoolean:true
-//testCustomClass.testString:test string96
-//testCustomClass.testDate:2022-05-12T20:01:35.219+0000
-//testCustomClass.testDecimal:236.63810904815156
+<pre><code class="language-json">//testTime:2012-05-28T13:14:00.520+0000
+//testTimestamp:2012-05-28T13:14:00.520+0000
+//testSqlDate:2012-05-28T13:14:00.520+0000
+//blob:HelloWorld
+//clob:HelloWorld
+//nClob:HelloWorld
+//file:@"/HelloWorld"
+</code></pre>
+
+<p ></p>
+<h3 >入参字段说明</h3>
+<p ></p>
+<table>
+<tr>
+<th ><strong>字段</strong></th>
+<th ><strong>类型</strong></th>
+<th ><strong>必填</strong></th>
+<th ><strong>含义</strong></th>
+<th ><strong>其他参考信息</strong></th>
+</tr>
+<tr>
+<td >testTime<br/></td>
+<td ><strong>Time</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testTimestamp<br/></td>
+<td ><strong>Timestamp</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >testSqlDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >blob<br/></td>
+<td ><strong>Blob</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >clob<br/></td>
+<td ><strong>Clob</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >nClob<br/></td>
+<td ><strong>NClob</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >file<br/></td>
+<td ><strong>MultipartFile</strong><br/></td>
+<td >否<br/></td>
+<td ><br/></td>
+<td ><br/></td>
+</tr>
+</table>
+
+<p ></p>
+<h2 >出参</h2>
+<blockquote>
+<p >此接口无任何出参</p>
+</blockquote>
+
+
+<h1 id='测试单个参数(普通Pojo)'>测试单个参数(普通Pojo)</h1>
+<p ></p>
+<h2 >请求信息</h2>
+<p ></p>
+<h3 >请求地址</h3>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSinglePojoParam</code></pre>
+
+<p ></p>
+<h3 >请求方法</h3>
+<pre><code class="language-json">POST</code></pre>
+
+<p ></p>
+<h3 >请求体类型</h3>
+<pre><code class="language-json">application/x-www-form-urlencoded</code></pre>
+
+<p ></p>
+<h2 >入参</h2>
+<h3 >入参示例 (Postman Bulk Edit)</h3>
+<pre><code class="language-json">//testCustomClass.testInt:1
+//testCustomClass.testLong:10
+//testCustomClass.testFloat:10.0
+//testCustomClass.testBoolean:false
+//testCustomClass.testString:test string
+//testCustomClass.testDate:2012-05-28T13:14:00.520+0000
+//testCustomClass.testDecimal:50.0
 //testCustomClass.testNumber:0
 //testCustomClass.testCycle:{}
 //list:{}
-//stringList[0]:测试字符串list100
-//stringList[1]:测试字符串list72
+//stringList[0]:测试字符串list
+//stringList[1]:测试字符串list
 //set:{}
-//stringSet[0]:测试字符串set59
-//stringSet[1]:测试字符串set52
+//stringSet[0]:测试字符串set
+//stringSet[1]:测试字符串set
 //map:{}
 //objMap.key1:{}
 //objMap.key2:{}
@@ -633,7 +729,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleGenericPojoParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleGenericPojoParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -646,21 +742,21 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//data.testInt:119
-//data.testLong:187
-//data.testFloat:24.06235
-//data.testBoolean:true
-//data.testString:test string115
-//data.testDate:2022-05-13T05:03:57.282+0000
-//data.testDecimal:521.6859214620368
+<pre><code class="language-json">//data.testInt:1
+//data.testLong:10
+//data.testFloat:10.0
+//data.testBoolean:false
+//data.testString:test string
+//data.testDate:2012-05-28T13:14:00.520+0000
+//data.testDecimal:50.0
 //data.testNumber:0
 //data.testCycle.testCustomClass:{}
 //data.testCycle.list:{}
-//data.testCycle.stringList[0]:测试字符串list7
-//data.testCycle.stringList[1]:测试字符串list34
+//data.testCycle.stringList[0]:测试字符串list
+//data.testCycle.stringList[1]:测试字符串list
 //data.testCycle.set:{}
-//data.testCycle.stringSet[0]:测试字符串set119
-//data.testCycle.stringSet[1]:测试字符串set64
+//data.testCycle.stringSet[0]:测试字符串set
+//data.testCycle.stringSet[1]:测试字符串set
 //data.testCycle.map:{}
 //data.testCycle.objMap.key1:{}
 //data.testCycle.objMap.key2:{}
@@ -846,7 +942,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testSingleFileParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testSingleFileParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -894,7 +990,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiBaseParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testMultiBaseParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -907,9 +1003,9 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">userId:19
-//userAge:52
-//amount:48.094536
+<pre><code class="language-json">userId:10
+//userAge:1
+//amount:10.0
 //userName:gudqs7
 </code></pre>
 
@@ -966,7 +1062,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiCollectionParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testMultiCollectionParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -979,12 +1075,12 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//userIdList[0]:142
-//userIdList[1]:319
-//userAgeList[0]:15
-//userAgeList[1]:93
-//userNameList[0]:用户姓名列表113
-//userNameList[1]:用户姓名列表41
+<pre><code class="language-json">//userIdList[0]:10
+//userIdList[1]:10
+//userAgeList[0]:1
+//userAgeList[1]:1
+//userNameList[0]:用户姓名列表
+//userNameList[1]:用户姓名列表
 </code></pre>
 
 <p ></p>
@@ -1033,7 +1129,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiPojoParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testMultiPojoParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -1046,21 +1142,21 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//testInt:103
-//testLong:195
-//testFloat:30.02068
-//testBoolean:true
-//testString:test string62
-//testDate:2022-05-13T06:17:43.661+0000
-//testDecimal:157.5600739173803
+<pre><code class="language-json">//testInt:1
+//testLong:10
+//testFloat:10.0
+//testBoolean:false
+//testString:test string
+//testDate:2012-05-28T13:14:00.520+0000
+//testDecimal:50.0
 //testNumber:0
 //testCycle.testCustomClass:{}
 //testCycle.list:{}
-//testCycle.stringList[0]:测试字符串list125
-//testCycle.stringList[1]:测试字符串list121
+//testCycle.stringList[0]:测试字符串list
+//testCycle.stringList[1]:测试字符串list
 //testCycle.set:{}
-//testCycle.stringSet[0]:测试字符串set23
-//testCycle.stringSet[1]:测试字符串set71
+//testCycle.stringSet[0]:测试字符串set
+//testCycle.stringSet[1]:测试字符串set
 //testCycle.map:{}
 //testCycle.objMap.key1:{}
 //testCycle.objMap.key2:{}
@@ -1269,7 +1365,7 @@
 <h2 >请求信息</h2>
 <p ></p>
 <h3 >请求地址</h3>
-<pre><code class="language-json">http://172.24.144.1:7086/api/v1/test/param/testMultiFileParam</code></pre>
+<pre><code class="language-json">http://127.0.0.1:7086/api/v1/test/param/testMultiFileParam</code></pre>
 
 <p ></p>
 <h3 >请求方法</h3>
@@ -1284,21 +1380,21 @@
 <h3 >入参示例 (Postman Bulk Edit)</h3>
 <pre><code class="language-json">file:@"/D:/wq-develop/code/docer-savior-plugin-usage-examples/a.txt"
 //file2:@"/C:/Users/wq/Downloads/a.txt"
-//testInt:10
-//testLong:474
-//testFloat:20.286009
-//testBoolean:true
-//testString:test string97
-//testDate:2022-05-13T05:15:51.267+0000
-//testDecimal:585.0979357306699
+//testInt:1
+//testLong:10
+//testFloat:10.0
+//testBoolean:false
+//testString:test string
+//testDate:2012-05-28T13:14:00.520+0000
+//testDecimal:50.0
 //testNumber:0
 //testCycle.testCustomClass:{}
 //testCycle.list:{}
-//testCycle.stringList[0]:测试字符串list105
-//testCycle.stringList[1]:测试字符串list120
+//testCycle.stringList[0]:测试字符串list
+//testCycle.stringList[1]:测试字符串list
 //testCycle.set:{}
-//testCycle.stringSet[0]:测试字符串set111
-//testCycle.stringSet[1]:测试字符串set27
+//testCycle.stringSet[0]:测试字符串set
+//testCycle.stringSet[1]:测试字符串set
 //testCycle.map:{}
 //testCycle.objMap.key1:{}
 //testCycle.objMap.key2:{}

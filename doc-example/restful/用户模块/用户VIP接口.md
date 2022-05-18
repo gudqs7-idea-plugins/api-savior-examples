@@ -4,7 +4,7 @@
 
 ### 请求地址
 ```
-http://172.24.144.1:7086/api/v1/vip/queryVipUsers
+http://127.0.0.1:7086/api/v1/vip/queryVipUsers
 ```
 
 ### 请求方法
@@ -22,13 +22,13 @@ application/x-www-form-urlencoded
 ```json
 pageNumber:1
 pageSize:20
-//searchKeyword:模糊搜索词99
+//searchKeyword:模糊搜索词
 //gender:2
 //vipType:3
 //firstOpenTimeStart:2022-05-09
 //firstOpenTimeEnd:2022-05-09
 //vipExpireTimeStart:2022-05-09
-//vipExpireTimeEnd:2022-05-09
+//vipExpireTimeEnd:2012-05-28
 
 ```
 
@@ -43,8 +43,8 @@ pageSize:20
 | gender     | **Integer**     | 否  |  用户性别<br>0: 保密<br>1: 男<br>2: 女 |   |
 | vipType     | **Integer**     | 否  |  VIP 类型<br>1:青铜<br>2:白银<br>3:黄金 |   |
 | firstOpenTimeStart     | **String**     | 否  |  VIP开通时间范围-开始<br>格式: 2022-05-09 |   |
-| firstOpenTimeEnd     | **Date**     | 否  |  VIP开通时间范围-结束<br>格式: 2022-05-09 |   |
-| vipExpireTimeStart     | **String**     | 否  |  VIP过期时间范围-开始<br>格式: 2022-05-09 |   |
+| firstOpenTimeEnd     | **String**     | 否  |  VIP开通时间范围-结束<br>格式: 2022-05-09 |   |
+| vipExpireTimeStart     | **Date**     | 否  |  VIP过期时间范围-开始<br>格式: 2022-05-09 |   |
 | vipExpireTimeEnd     | **Date**     | 否  |  VIP过期时间范围-结束<br>格式: 2022-05-09 |   |
 
 ## 出参
@@ -53,15 +53,15 @@ pageSize:20
 {
   "success": true,
   "code": 200,
-  "message": "错误信息65",
+  "message": "错误信息",
   "data": [
     {
-      "userId": 595,
+      "userId": 10,
       "vipType": 3,
-      "vipExpireTime": "2022-05-13T05:54:25.129+0000",
-      "vipFirstOpenTime": "2022-05-13T07:16:35.652+0000",
-      "userNickName": "用户昵称93",
-      "userRealName": "用户姓名122",
+      "vipExpireTime": "2012-05-28T13:14:00.520+0000",
+      "vipFirstOpenTime": "2012-05-28T13:14:00.520+0000",
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -69,12 +69,12 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     },
     {
-      "userId": 595,
+      "userId": 10,
       "vipType": 3,
-      "vipExpireTime": "2022-05-13T05:54:25.129+0000",
-      "vipFirstOpenTime": "2022-05-13T07:16:35.652+0000",
-      "userNickName": "用户昵称93",
-      "userRealName": "用户姓名122",
+      "vipExpireTime": "2012-05-28T13:14:00.520+0000",
+      "vipFirstOpenTime": "2012-05-28T13:14:00.520+0000",
+      "userNickName": "用户昵称",
+      "userRealName": "用户姓名",
       "userGender": 2,
       "userAge": 18,
       "userPhone": "13123339966",
@@ -82,7 +82,7 @@ pageSize:20
       "userAvatar": "https://img.xxx.com/xxxxxxx"
     }
   ],
-  "totalCount": 189
+  "totalCount": 10
 }
 ```
 
@@ -117,7 +117,7 @@ pageSize:20
 
 ### 请求地址
 ```
-http://172.24.144.1:7086/api/v1/vip/openVip
+http://127.0.0.1:7086/api/v1/vip/openVip
 ```
 
 ### 请求方法
@@ -154,7 +154,7 @@ openingTime:1
 {
   "success": true,
   "code": 200,
-  "message": "错误信息41",
+  "message": "错误信息",
   "data": false
 }
 ```
@@ -187,7 +187,7 @@ openingTime:1
 
 ### 请求地址
 ```
-http://172.24.144.1:7086/api/v1/vip/renewVip
+http://127.0.0.1:7086/api/v1/vip/renewVip
 ```
 
 ### 请求方法
@@ -222,8 +222,8 @@ openingTime:1
 {
   "success": true,
   "code": 200,
-  "message": "错误信息66",
-  "data": true
+  "message": "错误信息",
+  "data": false
 }
 ```
 
