@@ -36,5 +36,34 @@ public class GenerateAllSetterAndGetterTest {
 
     }
 
+    public ReturnTestBaseType test05(TestBaseType testBaseTypeSrc) {
+        ReturnTestBaseType returnTestBaseType = new ReturnTestBaseType();
+        returnTestBaseType.setTestByte(testBaseTypeSrc.getTestByte());
+        returnTestBaseType.setTestShort(testBaseTypeSrc.getTestShort());
+        returnTestBaseType.setTestInt(testBaseTypeSrc.getTestInt());
+        returnTestBaseType.setTestLong(testBaseTypeSrc.getTestLong());
+        returnTestBaseType.setTestFloat(testBaseTypeSrc.getTestFloat());
+        returnTestBaseType.setTestDouble(testBaseTypeSrc.getTestDouble());
+        returnTestBaseType.setTestChar(testBaseTypeSrc.getTestChar());
+        returnTestBaseType.setTestBoolean(testBaseTypeSrc.isTestBoolean());
+        returnTestBaseType.setTestByteWithBoxWithBox(testBaseTypeSrc.getTestByteWithBoxWithBox());
+        returnTestBaseType.setTestShortWithBoxWithBox(testBaseTypeSrc.getTestShortWithBoxWithBox());
+        returnTestBaseType.setTestIntWithBoxWithBox(testBaseTypeSrc.getTestIntWithBoxWithBox());
+        returnTestBaseType.setTestLongWithBoxWithBox(testBaseTypeSrc.getTestLongWithBoxWithBox());
+        returnTestBaseType.setTestFloatWithBoxWithBox(testBaseTypeSrc.getTestFloatWithBoxWithBox());
+        returnTestBaseType.setTestDoubleWithBoxWithBox(testBaseTypeSrc.getTestDoubleWithBoxWithBox());
+        returnTestBaseType.setTestCharWithBoxWithBox(testBaseTypeSrc.getTestCharWithBoxWithBox());
+        returnTestBaseType.setTestBooleanWithBoxWithBox(testBaseTypeSrc.getTestBooleanWithBoxWithBox());
+        returnTestBaseType.setTestString(testBaseTypeSrc.getTestString());
+        returnTestBaseType.setTestDate(testBaseTypeSrc.getTestDate());
+        returnTestBaseType.setTestDecimal(testBaseTypeSrc.getTestDecimal());
+        returnTestBaseType.setTestNumber(testBaseTypeSrc.getTestNumber());
+        returnTestBaseType.setTestTime(testBaseTypeSrc.getTestTime());
+        returnTestBaseType.setTestTimestamp(testBaseTypeSrc.getTestTimestamp());
+        returnTestBaseType.setTestSqlDate(testBaseTypeSrc.getTestSqlDate());
+        returnTestBaseType.setTestAdd(null/* 源对象无此字段 */);
+        returnTestBaseType.setFile(testBaseTypeSrc.getFile());
+        return returnTestBaseType;
+    }
 
 }

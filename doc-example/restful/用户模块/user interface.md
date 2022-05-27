@@ -171,7 +171,7 @@ userGender:2
 | Code | 含义 |
 | -------- | -------- |
 | **10001** | User nickname already exists |
-| **10002** | User age range is invalid | User age must be a number between 0 and 200 |
+| **10002** | User age range is invalid, User age must be a number between 0 and 200 |
 
 
 # update a user
@@ -245,7 +245,7 @@ userGender:2
 
 | Code | 含义 |
 | -------- | -------- |
-| **10002** | User age range is invalid | User age must be a number between 0 and 200 |
+| **10002** | User age range is invalid, User age must be a number between 0 and 200 |
 
 
 # delete a user

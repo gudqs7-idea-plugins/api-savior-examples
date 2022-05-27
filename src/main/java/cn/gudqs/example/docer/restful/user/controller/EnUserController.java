@@ -50,7 +50,7 @@ public class EnUserController {
      * @return Whether the operation was successful
      * #hiddenResponse totalCount
      * #code 10001 User nickname already exists
-     * #code 10002 User age range is invalid | User age must be a number between 0 and 200
+     * #code 10002 User age range is invalid, User age must be a number between 0 and 200
      */
     @PostMapping("/createUser")
     public BaseResponse<Boolean> createUser(CreateUserRequest createUserRequest) {
@@ -63,7 +63,7 @@ public class EnUserController {
      * @param updateUserRequest User Info
      * @return Whether the operation was successful
      * #hiddenResponse totalCount
-     * #code 10002 User age range is invalid | User age must be a number between 0 and 200
+     * #code 10002 User age range is invalid, User age must be a number between 0 and 200
      */
     @PostMapping("/updateUser")
     public BaseResponse<Boolean> updateUser(UpdateUserRequest updateUserRequest) {
