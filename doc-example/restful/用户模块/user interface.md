@@ -1,4 +1,4 @@
-# 查询用户列表(分页)
+# Query user list with pagination
 
 ## 请求信息
 
@@ -99,7 +99,7 @@ pageSize:20
 
 
 
-# 新增一个用户
+# add a user
 
 ## 请求信息
 
@@ -170,11 +170,11 @@ userGender:2
 
 | Code | 含义 |
 | -------- | -------- |
-| **10001** | 用户昵称已存在 |
-| **10002** | 用户年龄范围无效 用户年龄需在0~200之间的数字 |
+| **10001** | User nickname already exists |
+| **10002** | User age range is invalid | User age must be a number between 0 and 200 |
 
 
-# 更新一个用户
+# update a user
 
 ## 请求信息
 
@@ -245,10 +245,10 @@ userGender:2
 
 | Code | 含义 |
 | -------- | -------- |
-| **10002** | 用户年龄范围无效 用户年龄需在0~200之间的数字 |
+| **10002** | User age range is invalid | User age must be a number between 0 and 200 |
 
 
-# 删除一个用户
+# delete a user
 
 ## 请求信息
 
@@ -279,7 +279,7 @@ userId:1
 
 | **字段** | **类型** | **必填** | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- | -------- |
-| userId     | **Long**     | **是**  |  用户ID | 默认值为 1  |
+| userId     | **Long**     | **是**  |  UserID | 默认值为 1  |
 
 ## 出参
 ### 出参示例
@@ -307,6 +307,6 @@ userId:1
 
 | Code | 含义 |
 | -------- | -------- |
-| **10003** | 用户信息不存在 |
+| **10003** | User information does not exist |
 
 

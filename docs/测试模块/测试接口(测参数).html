@@ -228,7 +228,7 @@
 <td ><strong>int</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >用户id</td>
-<td ><br/></td>
+<td >默认值为 30<br/></td>
 </tr>
 </table>
 
@@ -955,7 +955,7 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">//file:@"/C:/Users/wq/Desktop/test.zip"
+<pre><code class="language-json">//file:@"/C:/Users/WQ/Desktop/test.zip"
 </code></pre>
 
 <p ></p>
@@ -974,7 +974,7 @@
 <td ><strong>MultipartFile</strong><br/></td>
 <td >否<br/></td>
 <td >文件</td>
-<td ><br/></td>
+<td >默认值为 ${desktop}/test.zip<br/></td>
 </tr>
 </table>
 
@@ -1046,7 +1046,7 @@
 <td ><strong>String</strong><br/></td>
 <td >否<br/></td>
 <td >用户姓名</td>
-<td ><br/></td>
+<td >默认值为 gudqs7<br/></td>
 </tr>
 </table>
 
@@ -1187,7 +1187,7 @@
 <td >testBasePojo<br/></td>
 <td ><strong>TestBasePojo</strong><br/></td>
 <td >否<br/></td>
-<td >pojo</td>
+<td >basepojo</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -1378,8 +1378,8 @@
 <p ></p>
 <h2 >入参</h2>
 <h3 >入参示例 (Postman Bulk Edit)</h3>
-<pre><code class="language-json">file:@"/D:/wq-develop/code/docer-savior-plugin-usage-examples/a.txt"
-//file2:@"/C:/Users/wq/Downloads/a.txt"
+<pre><code class="language-json">file:@"/D:/code/docer-savior-plugin-usage-examples/a.txt"
+//file2:@"/C:/Users/WQ/Downloads/a.txt"
 //testInt:1
 //testLong:10
 //testFloat:10.0
@@ -1416,14 +1416,14 @@
 <td ><strong>MultipartFile</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >文件1</td>
-<td ><br/></td>
+<td >默认值为 ${project}/a.txt<br/></td>
 </tr>
 <tr>
 <td >file2<br/></td>
 <td ><strong>MultipartFile</strong><br/></td>
 <td >否<br/></td>
 <td >文件2</td>
-<td ><br/></td>
+<td >默认值为 ${download}/a.txt<br/></td>
 </tr>
 <tr>
 <td >testBasePojo<br/></td>

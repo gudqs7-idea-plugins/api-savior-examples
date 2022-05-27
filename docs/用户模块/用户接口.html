@@ -207,14 +207,14 @@ pageSize:20
 <td ><strong>Integer</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >分页-当前页码</td>
-<td ><br/></td>
+<td >默认值为 1<br/></td>
 </tr>
 <tr>
 <td >pageSize<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >分页-分页大小</td>
-<td ><br/></td>
+<td >默认值为 20<br/></td>
 </tr>
 <tr>
 <td >searchKeyword<br/></td>
@@ -228,7 +228,7 @@ pageSize:20
 <td ><strong>Integer</strong><br/></td>
 <td >否<br/></td>
 <td >用户性别<br>0: 保密<br>1: 男<br>2: 女</td>
-<td ><br/></td>
+<td >默认值为 2<br/></td>
 </tr>
 <tr>
 <td >ageStart<br/></td>
@@ -249,14 +249,14 @@ pageSize:20
 <td ><strong>String</strong><br/></td>
 <td >否<br/></td>
 <td >注册时间范围-开始<br>格式: 2022-05-09</td>
-<td ><br/></td>
+<td >默认值为 2022-05-09<br/></td>
 </tr>
 <tr>
 <td >registerTimeEnd<br/></td>
 <td ><strong>Date</strong><br/></td>
 <td >否<br/></td>
 <td >注册时间范围-结束<br>格式: 2022-05-09</td>
-<td ><br/></td>
+<td >默认值为 2022-05-09<br/></td>
 </tr>
 </table>
 
@@ -306,13 +306,13 @@ pageSize:20
 <td >success<br/></td>
 <td ><strong>Boolean</strong><br/></td>
 <td >请求是否成功</td>
-<td ><br/></td>
+<td >默认值为 true<br/></td>
 </tr>
 <tr>
 <td >code<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >状态码<br>200: 代表成功<br>其它代表异常</td>
-<td ><br/></td>
+<td >默认值为 200<br/></td>
 </tr>
 <tr>
 <td >message<br/></td>
@@ -348,31 +348,31 @@ pageSize:20
 <td >└─ userGender<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >用户性别<br>0:保密<br>1:男<br>2:女</td>
-<td ><br/></td>
+<td >默认值为 2<br/></td>
 </tr>
 <tr>
 <td >└─ userAge<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >用户年龄</td>
-<td ><br/></td>
+<td >默认值为 18<br/></td>
 </tr>
 <tr>
 <td >└─ userPhone<br/></td>
 <td ><strong>String</strong><br/></td>
 <td >联系方式-手机号</td>
-<td ><br/></td>
+<td >默认值为 13123339966<br/></td>
 </tr>
 <tr>
 <td >└─ userEmail<br/></td>
 <td ><strong>String</strong><br/></td>
 <td >联系方式-电子邮箱</td>
-<td ><br/></td>
+<td >默认值为 2333@163.com<br/></td>
 </tr>
 <tr>
 <td >└─ userAvatar<br/></td>
 <td ><strong>String</strong><br/></td>
 <td >用户头像 url 地址</td>
-<td ><br/></td>
+<td >默认值为 https://img.xxx.com/xxxxxxx<br/></td>
 </tr>
 <tr>
 <td >totalCount<br/></td>
@@ -441,14 +441,14 @@ userGender:2
 <td ><strong>Integer</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >用户性别<br>0:保密<br>1:男<br>2:女</td>
-<td ><br/></td>
+<td >默认值为 2<br/></td>
 </tr>
 <tr>
 <td >userAge<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >否<br/></td>
 <td >用户年龄</td>
-<td ><br/></td>
+<td >默认值为 18<br/></td>
 </tr>
 <tr>
 <td >userPhone<br/></td>
@@ -497,13 +497,13 @@ userGender:2
 <td >success<br/></td>
 <td ><strong>Boolean</strong><br/></td>
 <td >请求是否成功</td>
-<td ><br/></td>
+<td >默认值为 true<br/></td>
 </tr>
 <tr>
 <td >code<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >状态码<br>200: 代表成功<br>其它代表异常</td>
-<td ><br/></td>
+<td >默认值为 200<br/></td>
 </tr>
 <tr>
 <td >message<br/></td>
@@ -520,25 +520,21 @@ userGender:2
 </table>
 
 <p ></p>
-<p ></p>
 <h2 >更多信息</h2>
-<h3 >code 更多含义</h3>
+<h3 >Code 更多含义</h3>
 <p ></p>
 <table>
 <tr>
 <th >Code</th>
 <th >含义</th>
-<th >出现原因</th>
 </tr>
 <tr>
 <td ><strong>10001</strong></td>
 <td >用户昵称已存在</td>
-<td ><br/></td>
 </tr>
 <tr>
 <td ><strong>10002</strong></td>
-<td >用户年龄范围无效</td>
-<td >用户年龄需在0~200之间的数字</td>
+<td >用户年龄范围无效 用户年龄需在0~200之间的数字</td>
 </tr>
 </table>
 
@@ -600,14 +596,14 @@ userGender:2
 <td ><strong>Integer</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >用户性别<br>0:保密<br>1:男<br>2:女</td>
-<td ><br/></td>
+<td >默认值为 2<br/></td>
 </tr>
 <tr>
 <td >userAge<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >否<br/></td>
 <td >用户年龄</td>
-<td ><br/></td>
+<td >默认值为 18<br/></td>
 </tr>
 <tr>
 <td >userPhone<br/></td>
@@ -656,13 +652,13 @@ userGender:2
 <td >success<br/></td>
 <td ><strong>Boolean</strong><br/></td>
 <td >请求是否成功</td>
-<td ><br/></td>
+<td >默认值为 true<br/></td>
 </tr>
 <tr>
 <td >code<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >状态码<br>200: 代表成功<br>其它代表异常</td>
-<td ><br/></td>
+<td >默认值为 200<br/></td>
 </tr>
 <tr>
 <td >message<br/></td>
@@ -679,20 +675,17 @@ userGender:2
 </table>
 
 <p ></p>
-<p ></p>
 <h2 >更多信息</h2>
-<h3 >code 更多含义</h3>
+<h3 >Code 更多含义</h3>
 <p ></p>
 <table>
 <tr>
 <th >Code</th>
 <th >含义</th>
-<th >出现原因</th>
 </tr>
 <tr>
 <td ><strong>10002</strong></td>
-<td >用户年龄范围无效</td>
-<td >用户年龄需在0~200之间的数字</td>
+<td >用户年龄范围无效 用户年龄需在0~200之间的数字</td>
 </tr>
 </table>
 
@@ -734,7 +727,7 @@ userGender:2
 <td ><strong>Long</strong><br/></td>
 <td ><strong>是</strong><br/></td>
 <td >用户ID</td>
-<td ><br/></td>
+<td >默认值为 1<br/></td>
 </tr>
 </table>
 
@@ -762,13 +755,13 @@ userGender:2
 <td >success<br/></td>
 <td ><strong>Boolean</strong><br/></td>
 <td >请求是否成功</td>
-<td ><br/></td>
+<td >默认值为 true<br/></td>
 </tr>
 <tr>
 <td >code<br/></td>
 <td ><strong>Integer</strong><br/></td>
 <td >状态码<br>200: 代表成功<br>其它代表异常</td>
-<td ><br/></td>
+<td >默认值为 200<br/></td>
 </tr>
 <tr>
 <td >message<br/></td>
@@ -785,20 +778,17 @@ userGender:2
 </table>
 
 <p ></p>
-<p ></p>
 <h2 >更多信息</h2>
-<h3 >code 更多含义</h3>
+<h3 >Code 更多含义</h3>
 <p ></p>
 <table>
 <tr>
 <th >Code</th>
 <th >含义</th>
-<th >出现原因</th>
 </tr>
 <tr>
 <td ><strong>10003</strong></td>
 <td >用户信息不存在</td>
-<td ><br/></td>
 </tr>
 </table>
 
