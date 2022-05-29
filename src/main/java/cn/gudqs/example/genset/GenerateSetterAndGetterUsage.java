@@ -123,4 +123,17 @@ public class GenerateSetterAndGetterUsage {
         }
     }
 
+    public Foo usage09(Foo src) {
+        // 用法9 通过在方法名称上触发 Show Context Actions, 快捷键(如 Alt + Enter 或右键菜单选择)
+        //  可看到 Generate Convert，选中后生成下面注释里的内容（不包含 return null;)
+//        Foo foo = new Foo();
+//        foo.setTestInt(src.getTestInt());
+//        foo.setTestLong(src.getTestLong());
+//        foo.setTestFloat(src.getTestFloat());
+//        foo.setTestDouble(src.getTestDouble());
+//        foo.setTestBoolean(src.getTestBoolean());
+//        return foo;
+        return null;
+    }
+
 }
