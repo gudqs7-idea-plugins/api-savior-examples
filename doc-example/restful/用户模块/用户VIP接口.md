@@ -37,14 +37,14 @@ pageSize:20
 
 | **字段** | **类型** | **必填** | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- | -------- |
-| pageNumber     | **Integer**     | **是**  |  分页-当前页码 | 默认值为 1  |
-| pageSize     | **Integer**     | **是**  |  分页-分页大小 | 默认值为 20  |
+| pageNumber     | **Integer**     | **是**  |  分页-当前页码 | 示例值为 1  |
+| pageSize     | **Integer**     | **是**  |  分页-分页大小 | 示例值为 20  |
 | searchKeyword     | **String**     | 否  |  模糊搜索词<br>支持用户昵称, 用户姓名, 用户手机号 |   |
-| gender     | **Integer**     | 否  |  用户性别<br>0: 保密<br>1: 男<br>2: 女 | 默认值为 2  |
-| vipType     | **Integer**     | 否  |  VIP 类型<br>1:青铜<br>2:白银<br>3:黄金 | 默认值为 3  |
-| firstOpenTimeStart     | **String**     | 否  |  VIP开通时间范围-开始<br>格式: 2022-05-09 | 默认值为 2022-05-09  |
-| firstOpenTimeEnd     | **String**     | 否  |  VIP开通时间范围-结束<br>格式: 2022-05-09 | 默认值为 2022-05-09  |
-| vipExpireTimeStart     | **Date**     | 否  |  VIP过期时间范围-开始<br>格式: 2022-05-09 | 默认值为 2022-05-09  |
+| gender     | **Integer**     | 否  |  用户性别<br>0: 保密<br>1: 男<br>2: 女 | 示例值为 2  |
+| vipType     | **Integer**     | 否  |  VIP 类型<br>1:青铜<br>2:白银<br>3:黄金 | 示例值为 3  |
+| firstOpenTimeStart     | **String**     | 否  |  VIP开通时间范围-开始<br>格式: 2022-05-09 | 示例值为 2022-05-09  |
+| firstOpenTimeEnd     | **String**     | 否  |  VIP开通时间范围-结束<br>格式: 2022-05-09 | 示例值为 2022-05-09  |
+| vipExpireTimeStart     | **Date**     | 否  |  VIP过期时间范围-开始<br>格式: 2022-05-09 | 示例值为 2022-05-09  |
 | vipExpireTimeEnd     | **Date**     | 否  |  VIP过期时间范围-结束<br>格式: 2022-05-09 |   |
 
 ## 出参
@@ -91,21 +91,21 @@ pageSize:20
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  请求是否成功 | 默认值为 true  |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 默认值为 200  |
+| success     | **Boolean**    |  请求是否成功 | 示例值为 true  |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 示例值为 200  |
 | message     | **String**    |  错误信息 |   |
 | data     | **List\<VipUserResponse\>**    |  返回数据 |   |
 |└─ userId     | **Long**    |  用户ID-主键 |   |
-|└─ vipType     | **Integer**    |  VIP 类型<br>1:青铜<br>2:白银<br>3:黄金 | 默认值为 3  |
+|└─ vipType     | **Integer**    |  VIP 类型<br>1:青铜<br>2:白银<br>3:黄金 | 示例值为 3  |
 |└─ vipExpireTime     | **Date**    |  VIP 过期时间 |   |
 |└─ vipFirstOpenTime     | **Date**    |  VIP 首次开通时间 |   |
 |└─ userNickName     | **String**    |  用户昵称 |   |
 |└─ userRealName     | **String**    |  用户姓名 |   |
-|└─ userGender     | **Integer**    |  用户性别<br>0:保密<br>1:男<br>2:女 | 默认值为 2  |
-|└─ userAge     | **Integer**    |  用户年龄 | 默认值为 18  |
-|└─ userPhone     | **String**    |  联系方式-手机号 | 默认值为 13123339966  |
-|└─ userEmail     | **String**    |  联系方式-电子邮箱 | 默认值为 2333@163.com  |
-|└─ userAvatar     | **String**    |  用户头像 url 地址 | 默认值为 https://img.xxx.com/xxxxxxx  |
+|└─ userGender     | **Integer**    |  用户性别<br>0:保密<br>1:男<br>2:女 | 示例值为 2  |
+|└─ userAge     | **Integer**    |  用户年龄 | 示例值为 18  |
+|└─ userPhone     | **String**    |  联系方式-手机号 | 示例值为 13123339966  |
+|└─ userEmail     | **String**    |  联系方式-电子邮箱 | 示例值为 2333@163.com  |
+|└─ userAvatar     | **String**    |  用户头像 url 地址 | 示例值为 https://img.xxx.com/xxxxxxx  |
 | totalCount     | **Long**    |  分页-总条数 |   |
 
 
@@ -143,9 +143,9 @@ openingTime:1
 
 | **字段** | **类型** | **必填** | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- | -------- |
-| userId     | **Long**     | **是**  |  用户ID | 默认值为 1  |
-| vipType     | **Integer**     | **是**  |  VIP类型<br>1:青铜<br>2:白银<br>3:黄金 | 默认值为 3  |
-| openingTime     | **Integer**     | **是**  |  VIP 开通时长(单位:月) | 默认值为 1  |
+| userId     | **Long**     | **是**  |  用户ID | 示例值为 1  |
+| vipType     | **Integer**     | **是**  |  VIP类型<br>1:青铜<br>2:白银<br>3:黄金 | 示例值为 3  |
+| openingTime     | **Integer**     | **是**  |  VIP 开通时长(单位:月) | 示例值为 1  |
 
 ## 出参
 ### 出参示例
@@ -163,8 +163,8 @@ openingTime:1
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  请求是否成功 | 默认值为 true  |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 默认值为 200  |
+| success     | **Boolean**    |  请求是否成功 | 示例值为 true  |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 示例值为 200  |
 | message     | **String**    |  错误信息 |   |
 | data     | **Boolean**    |  返回数据 |   |
 
@@ -210,8 +210,8 @@ openingTime:1
 
 | **字段** | **类型** | **必填** | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- | -------- |
-| userId     | **Long**     | **是**  |  用户ID | 默认值为 1  |
-| openingTime     | **Integer**     | **是**  |  VIP 续费时长(单位:月) | 默认值为 1  |
+| userId     | **Long**     | **是**  |  用户ID | 示例值为 1  |
+| openingTime     | **Integer**     | **是**  |  VIP 续费时长(单位:月) | 示例值为 1  |
 
 ## 出参
 ### 出参示例
@@ -229,8 +229,8 @@ openingTime:1
 
 | **字段** | **类型**  | **含义** | **其他参考信息** |
 | -------- | -------- | -------- | -------- |
-| success     | **Boolean**    |  请求是否成功 | 默认值为 true  |
-| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 默认值为 200  |
+| success     | **Boolean**    |  请求是否成功 | 示例值为 true  |
+| code     | **Integer**    |  状态码<br>200: 代表成功<br>其它代表异常 | 示例值为 200  |
 | message     | **String**    |  错误信息 |   |
 | data     | **Boolean**    |  返回数据 |   |
 
