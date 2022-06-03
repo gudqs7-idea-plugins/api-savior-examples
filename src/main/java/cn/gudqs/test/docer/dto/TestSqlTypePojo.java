@@ -3,7 +3,10 @@ package cn.gudqs.test.docer.dto;
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.sql.*;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.Time;
+import java.sql.Timestamp;
 
 @Data
 public class TestSqlTypePojo {
@@ -17,8 +20,6 @@ public class TestSqlTypePojo {
     private Blob blob;
 
     private Clob clob;
-
-    private NClob nClob;
 
     private MultipartFile file = null;
 

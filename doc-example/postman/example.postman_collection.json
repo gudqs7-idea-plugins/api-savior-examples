@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "71721874-2cf9-4fce-af13-d3bc9bae7fef",
+    "_postman_id": "132ea12f-58e6-49a4-8830-a20af6411ecb",
     "name": "example",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -2328,13 +2328,6 @@
                       "disabled": true
                     },
                     {
-                      "key": "nClob",
-                      "value": "HelloWorld",
-                      "description": "",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
                       "key": "file",
                       "src": "/HelloWorld",
                       "description": "",
@@ -2354,7 +2347,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(sql类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleSqlTypePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testTime:2012-05-28T13:14:00.520+0000\n//testTimestamp:2012-05-28T13:14:00.520+0000\n//testSqlDate:2012-05-28T13:14:00.520+0000\n//blob:HelloWorld\n//clob:HelloWorld\n//nClob:HelloWorld\n//file:@\"/HelloWorld\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testTime     | **Time**     | 否  |   |   |\r\n| testTimestamp     | **Timestamp**     | 否  |   |   |\r\n| testSqlDate     | **Date**     | 否  |   |   |\r\n| blob     | **Blob**     | 否  |   |   |\r\n| clob     | **Clob**     | 否  |   |   |\r\n| nClob     | **NClob**     | 否  |   |   |\r\n| file     | **MultipartFile**     | 否  |   |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(sql类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleSqlTypePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testTime:2012-05-28T13:14:00.520+0000\n//testTimestamp:2012-05-28T13:14:00.520+0000\n//testSqlDate:2012-05-28T13:14:00.520+0000\n//blob:HelloWorld\n//clob:HelloWorld\n//file:@\"/HelloWorld\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testTime     | **Time**     | 否  |   |   |\r\n| testTimestamp     | **Timestamp**     | 否  |   |   |\r\n| testSqlDate     | **Date**     | 否  |   |   |\r\n| blob     | **Blob**     | 否  |   |   |\r\n| clob     | **Clob**     | 否  |   |   |\r\n| file     | **MultipartFile**     | 否  |   |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2395,13 +2388,6 @@
                         },
                         {
                           "key": "clob",
-                          "value": "HelloWorld",
-                          "description": "",
-                          "type": "text",
-                          "disabled": true
-                        },
-                        {
-                          "key": "nClob",
                           "value": "HelloWorld",
                           "description": "",
                           "type": "text",

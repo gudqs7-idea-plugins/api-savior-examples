@@ -7,7 +7,10 @@ import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigDecimal;
-import java.sql.*;
+import java.sql.Blob;
+import java.sql.Clob;
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -99,11 +102,6 @@ public class TestBaseType {
      * test clob
      */
     private Clob clob;
-
-    /**
-     * test nclob
-     */
-    private NClob nClob;
 
     /**
      * test multipart file
