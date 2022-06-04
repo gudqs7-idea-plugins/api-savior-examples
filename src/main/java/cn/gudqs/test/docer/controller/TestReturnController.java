@@ -1,5 +1,6 @@
 package cn.gudqs.test.docer.controller;
 
+import cn.gudqs.example.docer.base.BaseResponse;
 import cn.gudqs.test.docer.dto.TestBasePojo;
 import cn.gudqs.test.docer.dto.TestGenericPojo;
 import cn.gudqs.test.docer.dto.TestPojo;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 测试接口(测响应)
@@ -86,5 +88,16 @@ public class TestReturnController {
         return null;
     }
 
+
+    /**
+     * bug 示例, 暂时隐藏
+     *
+     * @return
+     * @hidden
+     */
+    public BaseResponse<List<Map<String, TestGenericPojo<TestBasePojo>>>> testSuperGeneric() {
+        // 希望能做到示例正常, 第二层类型名带 List 和 Map
+        return null;
+    }
 
 }
