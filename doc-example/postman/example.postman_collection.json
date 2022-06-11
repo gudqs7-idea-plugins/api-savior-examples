@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "132ea12f-58e6-49a4-8830-a20af6411ecb",
+    "_postman_id": "ff43bbd9-64ee-4edf-8346-5f7465ea1be0",
     "name": "example",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -2329,7 +2329,7 @@
                     },
                     {
                       "key": "file",
-                      "src": "/HelloWorld",
+                      "src": "HelloWorld",
                       "description": "",
                       "type": "file",
                       "disabled": true
@@ -2347,7 +2347,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(sql类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleSqlTypePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testTime:2012-05-28T13:14:00.520+0000\n//testTimestamp:2012-05-28T13:14:00.520+0000\n//testSqlDate:2012-05-28T13:14:00.520+0000\n//blob:HelloWorld\n//clob:HelloWorld\n//file:@\"/HelloWorld\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testTime     | **Time**     | 否  |   |   |\r\n| testTimestamp     | **Timestamp**     | 否  |   |   |\r\n| testSqlDate     | **Date**     | 否  |   |   |\r\n| blob     | **Blob**     | 否  |   |   |\r\n| clob     | **Clob**     | 否  |   |   |\r\n| file     | **MultipartFile**     | 否  |   |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(sql类型组成的Pojo)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleSqlTypePojoParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\napplication/x-www-form-urlencoded\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//testTime:2012-05-28T13:14:00.520+0000\n//testTimestamp:2012-05-28T13:14:00.520+0000\n//testSqlDate:2012-05-28T13:14:00.520+0000\n//blob:HelloWorld\n//clob:HelloWorld\n//file:@\"HelloWorld\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| testTime     | **Time**     | 否  |   |   |\r\n| testTimestamp     | **Timestamp**     | 否  |   |   |\r\n| testSqlDate     | **Date**     | 否  |   |   |\r\n| blob     | **Blob**     | 否  |   |   |\r\n| clob     | **Clob**     | 否  |   |   |\r\n| file     | **MultipartFile**     | 否  |   |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -2395,7 +2395,7 @@
                         },
                         {
                           "key": "file",
-                          "src": "/HelloWorld",
+                          "src": "HelloWorld",
                           "description": "",
                           "type": "file",
                           "disabled": true
@@ -3159,7 +3159,7 @@
                   "formdata": [
                     {
                       "key": "file",
-                      "src": "/C:/Users/WQ/Desktop/test.zip",
+                      "src": "/Users/wq/Desktop/test.zip",
                       "description": "文件",
                       "type": "file",
                       "disabled": true
@@ -3177,7 +3177,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试单个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//file:@\"/C:/Users/WQ/Desktop/test.zip\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | 否  |  文件 | 示例值为 \\$\\{desktop\\}/test.zip  |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
+                "description": "# 测试单个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testSingleFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\n//file:@\"/Users/wq/Desktop/test.zip\"\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | 否  |  文件 | 示例值为 \\$\\{desktop\\}/test.zip  |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -3190,7 +3190,7 @@
                       "formdata": [
                         {
                           "key": "file",
-                          "src": "/C:/Users/WQ/Desktop/test.zip",
+                          "src": "/Users/wq/Desktop/test.zip",
                           "description": "文件",
                           "type": "file",
                           "disabled": true
@@ -3925,14 +3925,14 @@
                   "formdata": [
                     {
                       "key": "file",
-                      "src": "/D:/code/docer-savior-plugin-usage-examples/a.txt",
+                      "src": "/Users/wq/code/remote/github/docer/docer-savior-plugin-usage-examples/a.txt",
                       "description": "文件1",
                       "type": "file",
                       "disabled": false
                     },
                     {
                       "key": "file2",
-                      "src": "/C:/Users/WQ/Downloads/a.txt",
+                      "src": "/Users/wq/Downloads/a.txt",
                       "description": "文件2",
                       "type": "file",
                       "disabled": true
@@ -4076,7 +4076,7 @@
                   ],
                   "host": "{{docer-savior-plugin-usage-examples-url}}"
                 },
-                "description": "# 测试多个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testMultiFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nfile:@\"/D:/code/docer-savior-plugin-usage-examples/a.txt\"\n//file2:@\"/C:/Users/WQ/Downloads/a.txt\"\n//testInt:1\n//testLong:10\n//testFloat:10.0\n//testBoolean:false\n//testString:test string\n//testDate:2012-05-28T13:14:00.520+0000\n//testDecimal:50.0\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list\n//testCycle.stringList[1]:测试字符串list\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set\n//testCycle.stringSet[1]:测试字符串set\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | **是**  |  文件1 | 示例值为 \\$\\{project\\}/a.txt  |\r\n| file2     | **MultipartFile**     | 否  |  文件2 | 示例值为 \\$\\{download\\}/a.txt  |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
+                "description": "# 测试多个参数(文件类型)\r\n\r\n## 请求信息\r\n\r\n### 请求地址\r\n```\r\nhttp://127.0.0.1:7086/api/v1/test/param/testMultiFileParam\r\n```\r\n\r\n### 请求方法\r\n```\r\nPOST\r\n```\r\n\r\n### 请求体类型\r\n```\r\nform-data\r\n```\r\n\r\n## 入参\r\n### 入参示例 (Postman Bulk Edit)\r\n```json\r\nfile:@\"/Users/wq/code/remote/github/docer/docer-savior-plugin-usage-examples/a.txt\"\n//file2:@\"/Users/wq/Downloads/a.txt\"\n//testInt:1\n//testLong:10\n//testFloat:10.0\n//testBoolean:false\n//testString:test string\n//testDate:2012-05-28T13:14:00.520+0000\n//testDecimal:50.0\n//testNumber:0\n//testCycle.testCustomClass:{}\n//testCycle.list:{}\n//testCycle.stringList[0]:测试字符串list\n//testCycle.stringList[1]:测试字符串list\n//testCycle.set:{}\n//testCycle.stringSet[0]:测试字符串set\n//testCycle.stringSet[1]:测试字符串set\n//testCycle.map:{}\n//testCycle.objMap.key1:{}\n//testCycle.objMap.key2:{}\n\r\n```\r\n\r\n\r\n### 入参字段说明\r\n\r\n| **字段** | **类型** | **必填** | **含义** | **其他参考信息** |\r\n| -------- | -------- | -------- | -------- | -------- |\r\n| file     | **MultipartFile**     | **是**  |  文件1 | 示例值为 \\$\\{project\\}/a.txt  |\r\n| file2     | **MultipartFile**     | 否  |  文件2 | 示例值为 \\$\\{download\\}/a.txt  |\r\n| testBasePojo     | **TestBasePojo**     | 否  |  pojo |   |\r\n|└─ testInt     | **int**     | 否  |  test int |   |\r\n|└─ testLong     | **long**     | 否  |  test long |   |\r\n|└─ testFloat     | **float**     | 否  |  test float |   |\r\n|└─ testBoolean     | **boolean**     | 否  |  test boolean |   |\r\n|└─ testString     | **String**     | 否  |  test string |   |\r\n|└─ testDate     | **Date**     | 否  |  test date |   |\r\n|└─ testDecimal     | **BigDecimal**     | 否  |  test decimal |   |\r\n|└─ testNumber     | **Number**     | 否  |  test number |   |\r\n|└─ testCycle     | **TestPojo**     | 否  |  测试循环 |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ testCustomClass     | **TestBasePojo**     | 否  |  测试普通Pojo |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ list     | **List**     | 否  |  测试普通list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringList     | **List\\\u003cString\\\u003e**     | 否  |  测试字符串list |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ set     | **Set**     | 否  |  测试普通set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ stringSet     | **Set\\\u003cString\\\u003e**     | 否  |  测试字符串set |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ map     | **Map**     | 否  |  测试普通Map |   |\r\n|\u0026ensp;\u0026ensp;\u0026ensp;\u0026ensp;└─ objMap     | **Map\\\u003cString, Object\\\u003e**     | 否  |  测试对象Map |   |\r\n\r\n## 出参\r\n\u003e 此接口无任何出参\r\n\r\n\r\n\r\n"
               },
               "response": [
                 {
@@ -4089,14 +4089,14 @@
                       "formdata": [
                         {
                           "key": "file",
-                          "src": "/D:/code/docer-savior-plugin-usage-examples/a.txt",
+                          "src": "/Users/wq/code/remote/github/docer/docer-savior-plugin-usage-examples/a.txt",
                           "description": "文件1",
                           "type": "file",
                           "disabled": false
                         },
                         {
                           "key": "file2",
-                          "src": "/C:/Users/WQ/Downloads/a.txt",
+                          "src": "/Users/wq/Downloads/a.txt",
                           "description": "文件2",
                           "type": "file",
                           "disabled": true
