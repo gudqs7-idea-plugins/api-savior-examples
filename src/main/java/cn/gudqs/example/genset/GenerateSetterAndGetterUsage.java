@@ -1,9 +1,6 @@
 package cn.gudqs.example.genset;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,10 +8,11 @@ import java.util.List;
 import java.util.Map;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-class Foo {
+class Foo extends Parent {
 
     private Integer testInt;
 
@@ -25,6 +23,15 @@ class Foo {
     private Double testDouble;
 
     private Boolean testBoolean;
+
+}
+
+@Data
+class Parent {
+
+    private Integer parentInt;
+
+    private String parentStr;
 
 }
 
@@ -99,6 +106,19 @@ public class GenerateSetterAndGetterUsage {
         dest.setTestFloat(src.getTestFloat());
         dest.setTestDouble(src.getTestDouble());
         dest.setTestBoolean(src.getTestBoolean());
+
+        // 新方式: 仅通过 dest 来生成, src 对象用户自己输入
+        // 取消下面的注释, 光标位于 convert 后面, 按下 Tab 键
+//        dest.convert
+        // 即可得到下面结果, 其中 sourceObj 会被选中且可编辑, 此时修改会修改所有语句, 在本示例中, 输入 src 回车即可
+//        dest.setTestInt(sourceObj.getTestInt());
+//        dest.setTestLong(sourceObj.getTestLong());
+//        dest.setTestFloat(sourceObj.getTestFloat());
+//        dest.setTestDouble(sourceObj.getTestDouble());
+//        dest.setTestBoolean(sourceObj.getTestBoolean());
+//        dest.setParentInt(sourceObj.getParentInt());
+//        dest.setParentStr(sourceObj.getParentStr());
+
     }
 
     public void usage06() {

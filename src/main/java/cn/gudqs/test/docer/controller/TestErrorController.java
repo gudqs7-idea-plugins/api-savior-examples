@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 测试错误接口
  * #hidden
+ * @author wq
  */
 @RestController
 @RequestMapping("/test/error")
