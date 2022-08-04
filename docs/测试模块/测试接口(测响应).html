@@ -319,8 +319,27 @@
   "testDate": "2012-05-28T13:14:00.520+0000",
   "testDecimal": 50.0,
   "testNumber": 0,
+  "testSelfCycle": {
+    "testInt": 1,
+    "testLong": 10,
+    "testFloat": 10.0,
+    "testBoolean": false,
+    "testString": "test string",
+    "testDate": "2012-05-28T13:14:00.520+0000",
+    "testDecimal": 50.0,
+    "testNumber": 0
+  },
   "testCycle": {
-    "testCustomClass": {},
+    "testCustomClass": {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0
+    },
     "list": {},
     "stringList": [
       "测试字符串list",
@@ -398,6 +417,60 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >testCycle<br/></td>
 <td ><strong>TestPojo</strong><br/></td>
 <td >测试循环</td>
@@ -407,6 +480,54 @@
 <td >└─ testCustomClass<br/></td>
 <td ><strong>TestBasePojo</strong><br/></td>
 <td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -483,7 +604,33 @@
     "testDate": "2012-05-28T13:14:00.520+0000",
     "testDecimal": 50.0,
     "testNumber": 0,
-    "testCycle": {}
+    "testSelfCycle": {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0
+    },
+    "testCycle": {
+      "list": {},
+      "stringList": [
+        "测试字符串list",
+        "测试字符串list"
+      ],
+      "set": {},
+      "stringSet": [
+        "测试字符串set",
+        "测试字符串set"
+      ],
+      "map": {},
+      "objMap": {
+        "key1": {},
+        "key2": {}
+      }
+    }
   },
   "list": {},
   "stringList": [
@@ -567,9 +714,99 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >└─ testCycle<br/></td>
 <td ><strong>TestPojo</strong><br/></td>
 <td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -646,8 +883,27 @@
     "testDate": "2012-05-28T13:14:00.520+0000",
     "testDecimal": 50.0,
     "testNumber": 0,
+    "testSelfCycle": {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0
+    },
     "testCycle": {
-      "testCustomClass": {},
+      "testCustomClass": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
       "list": {},
       "stringList": [
         "测试字符串list",
@@ -666,20 +922,388 @@
     }
   },
   "dataList": [
-    {},
-    {}
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    },
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    }
   ],
   "dataSet": [
-    {},
-    {}
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    },
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    }
   ],
   "dataCollection": [
-    {},
-    {}
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    },
+    {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    }
   ],
   "genericMap": {
-    "key1": {},
-    "key2": {}
+    "key1": {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    },
+    "key2": {
+      "testInt": 1,
+      "testLong": 10,
+      "testFloat": 10.0,
+      "testBoolean": false,
+      "testString": "test string",
+      "testDate": "2012-05-28T13:14:00.520+0000",
+      "testDecimal": 50.0,
+      "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
+      "testCycle": {
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "list": {},
+        "stringList": [
+          "测试字符串list",
+          "测试字符串list"
+        ],
+        "set": {},
+        "stringSet": [
+          "测试字符串set",
+          "测试字符串set"
+        ],
+        "map": {},
+        "objMap": {
+          "key1": {},
+          "key2": {}
+        }
+      }
+    }
   }
 }</code></pre>
 
@@ -748,6 +1372,60 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >└─ testCycle<br/></td>
 <td ><strong>TestPojo</strong><br/></td>
 <td >测试循环</td>
@@ -757,6 +1435,54 @@
 <td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
 <td ><strong>TestBasePojo</strong><br/></td>
 <td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -802,9 +1528,405 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >dataSet<br/></td>
 <td ><strong>Set&lt;TestBasePojo&gt;</strong><br/></td>
 <td >测试泛型集合Set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -814,9 +1936,405 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >genericMap<br/></td>
 <td ><strong>Map&lt;String, TestBasePojo&gt;</strong><br/></td>
 <td >测试带泛型Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
 <td ><br/></td>
 </tr>
 </table>
@@ -858,8 +2376,27 @@
       "testDate": "2012-05-28T13:14:00.520+0000",
       "testDecimal": 50.0,
       "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
       "testCycle": {
-        "testCustomClass": {},
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
         "list": {},
         "stringList": [
           "测试字符串list",
@@ -878,20 +2415,388 @@
       }
     },
     "dataList": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "dataSet": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "dataCollection": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "genericMap": {
-      "key1": {},
-      "key2": {}
+      "key1": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      "key2": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     }
   },
   {
@@ -904,8 +2809,27 @@
       "testDate": "2012-05-28T13:14:00.520+0000",
       "testDecimal": 50.0,
       "testNumber": 0,
+      "testSelfCycle": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0
+      },
       "testCycle": {
-        "testCustomClass": {},
+        "testCustomClass": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
         "list": {},
         "stringList": [
           "测试字符串list",
@@ -924,20 +2848,388 @@
       }
     },
     "dataList": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "dataSet": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "dataCollection": [
-      {},
-      {}
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     ],
     "genericMap": {
-      "key1": {},
-      "key2": {}
+      "key1": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      },
+      "key2": {
+        "testInt": 1,
+        "testLong": 10,
+        "testFloat": 10.0,
+        "testBoolean": false,
+        "testString": "test string",
+        "testDate": "2012-05-28T13:14:00.520+0000",
+        "testDecimal": 50.0,
+        "testNumber": 0,
+        "testSelfCycle": {
+          "testInt": 1,
+          "testLong": 10,
+          "testFloat": 10.0,
+          "testBoolean": false,
+          "testString": "test string",
+          "testDate": "2012-05-28T13:14:00.520+0000",
+          "testDecimal": 50.0,
+          "testNumber": 0
+        },
+        "testCycle": {
+          "testCustomClass": {
+            "testInt": 1,
+            "testLong": 10,
+            "testFloat": 10.0,
+            "testBoolean": false,
+            "testString": "test string",
+            "testDate": "2012-05-28T13:14:00.520+0000",
+            "testDecimal": 50.0,
+            "testNumber": 0
+          },
+          "list": {},
+          "stringList": [
+            "测试字符串list",
+            "测试字符串list"
+          ],
+          "set": {},
+          "stringSet": [
+            "测试字符串set",
+            "测试字符串set"
+          ],
+          "map": {},
+          "objMap": {
+            "key1": {},
+            "key2": {}
+          }
+        }
+      }
     }
   }
 ]</code></pre>
@@ -1007,6 +3299,60 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >&ensp;&ensp;&ensp;&ensp;└─ testCycle<br/></td>
 <td ><strong>TestPojo</strong><br/></td>
 <td >测试循环</td>
@@ -1016,6 +3362,54 @@
 <td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
 <td ><strong>TestBasePojo</strong><br/></td>
 <td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -1061,9 +3455,405 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >└─ dataSet<br/></td>
 <td ><strong>Set&lt;TestBasePojo&gt;</strong><br/></td>
 <td >测试泛型集合Set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
 <td ><br/></td>
 </tr>
 <tr>
@@ -1073,9 +3863,405 @@
 <td ><br/></td>
 </tr>
 <tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
+<td ><br/></td>
+</tr>
+<tr>
 <td >└─ genericMap<br/></td>
 <td ><strong>Map&lt;String, TestBasePojo&gt;</strong><br/></td>
 <td >测试带泛型Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testSelfCycle<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试自我循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;└─ testCycle<br/></td>
+<td ><strong>TestPojo</strong><br/></td>
+<td >测试循环</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testCustomClass<br/></td>
+<td ><strong>TestBasePojo</strong><br/></td>
+<td >测试普通Pojo</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testInt<br/></td>
+<td ><strong>int</strong><br/></td>
+<td >test int</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testLong<br/></td>
+<td ><strong>long</strong><br/></td>
+<td >test long</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testFloat<br/></td>
+<td ><strong>float</strong><br/></td>
+<td >test float</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testBoolean<br/></td>
+<td ><strong>boolean</strong><br/></td>
+<td >test boolean</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testString<br/></td>
+<td ><strong>String</strong><br/></td>
+<td >test string</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDate<br/></td>
+<td ><strong>Date</strong><br/></td>
+<td >test date</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testDecimal<br/></td>
+<td ><strong>BigDecimal</strong><br/></td>
+<td >test decimal</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ testNumber<br/></td>
+<td ><strong>Number</strong><br/></td>
+<td >test number</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ list<br/></td>
+<td ><strong>List</strong><br/></td>
+<td >测试普通list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringList<br/></td>
+<td ><strong>List&lt;String&gt;</strong><br/></td>
+<td >测试字符串list</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ set<br/></td>
+<td ><strong>Set</strong><br/></td>
+<td >测试普通set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ stringSet<br/></td>
+<td ><strong>Set&lt;String&gt;</strong><br/></td>
+<td >测试字符串set</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ map<br/></td>
+<td ><strong>Map</strong><br/></td>
+<td >测试普通Map</td>
+<td ><br/></td>
+</tr>
+<tr>
+<td >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;└─ objMap<br/></td>
+<td ><strong>Map&lt;String, Object&gt;</strong><br/></td>
+<td >测试对象Map</td>
 <td ><br/></td>
 </tr>
 </table>
