@@ -3,6 +3,7 @@ package cn.gudqs.test.docer.dto;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -41,6 +42,11 @@ public class TestBasePojo {
      * test date
      */
     private Date testDate;
+
+    /**
+     * test localDateTime
+     */
+    private LocalDateTime testLocalDt;
 
     /**
      * test decimal

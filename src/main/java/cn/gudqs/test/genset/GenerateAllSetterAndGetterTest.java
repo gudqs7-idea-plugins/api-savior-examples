@@ -37,6 +37,9 @@ public class GenerateAllSetterAndGetterTest {
     }
 
     public ReturnTestBaseType test05(TestBaseType testBaseTypeSrc) {
+        if (testBaseTypeSrc == null) {
+            return null;
+        }
         ReturnTestBaseType returnTestBaseType = new ReturnTestBaseType();
         returnTestBaseType.setTestByte(testBaseTypeSrc.getTestByte());
         returnTestBaseType.setTestShort(testBaseTypeSrc.getTestShort());
@@ -56,12 +59,13 @@ public class GenerateAllSetterAndGetterTest {
         returnTestBaseType.setTestBooleanWithBoxWithBox(testBaseTypeSrc.getTestBooleanWithBoxWithBox());
         returnTestBaseType.setTestString(testBaseTypeSrc.getTestString());
         returnTestBaseType.setTestDate(testBaseTypeSrc.getTestDate());
+        returnTestBaseType.setTestLocalDt(testBaseTypeSrc.getTestLocalDt());
         returnTestBaseType.setTestDecimal(testBaseTypeSrc.getTestDecimal());
         returnTestBaseType.setTestNumber(testBaseTypeSrc.getTestNumber());
         returnTestBaseType.setTestTime(testBaseTypeSrc.getTestTime());
         returnTestBaseType.setTestTimestamp(testBaseTypeSrc.getTestTimestamp());
         returnTestBaseType.setTestSqlDate(testBaseTypeSrc.getTestSqlDate());
-        returnTestBaseType.setTestAdd(null/* 源对象无此字段 */);
+        returnTestBaseType.setTestAdd(null);
         returnTestBaseType.setFile(testBaseTypeSrc.getFile());
         return returnTestBaseType;
     }

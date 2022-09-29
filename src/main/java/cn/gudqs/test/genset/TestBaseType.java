@@ -11,6 +11,7 @@ import java.sql.Blob;
 import java.sql.Clob;
 import java.sql.Time;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -67,6 +68,11 @@ public class TestBaseType {
      * test date
      */
     private Date testDate;
+
+    /**
+     * test localDateTime
+     */
+    private LocalDateTime testLocalDt;
 
     /**
      * test decimal

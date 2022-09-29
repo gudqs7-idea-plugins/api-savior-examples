@@ -9,6 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.math.BigDecimal;
 import java.sql.Time;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -65,6 +66,11 @@ public class ReturnTestBaseType {
      * test date
      */
     private Date testDate;
+
+    /**
+     * test localDateTime
+     */
+    private LocalDateTime testLocalDt;
 
     /**
      * test decimal
