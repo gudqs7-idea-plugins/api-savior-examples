@@ -11,8 +11,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>org.example</groupId>
-    <artifactId>docer-savior-plugin-usage-examples</artifactId>
+    <groupId>cn.gudqs7.idea.plugins</groupId>
+    <artifactId>api-savior-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
