@@ -1,6 +1,6 @@
 # 插件信息
-[release-img]: https://img.shields.io/github/release/docer-savior/docer-savior-idea-plugin.svg
-[latest-release]: https://github.com/docer-savior/docer-savior-idea-plugin/releases/latest
+[release-img]: https://img.shields.io/github/release/gudqs7-idea-plugins/api-savior.svg
+[latest-release]: https://github.com/gudqs7-idea-plugins/api-savior/releases/latest
 [plugin-img]: https://img.shields.io/badge/plugin-16860-orange.svg
 [plugin]: https://plugins.jetbrains.com/plugin/16860
 [jet-img]: https://img.shields.io/badge/plugin-Install%20Plugin-4597ff.svg
